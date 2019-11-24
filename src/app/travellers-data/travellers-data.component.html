@@ -3,35 +3,89 @@
 <div class="container">
     <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="false" styleClass="steps-custom"></p-steps>
     <div class="row">
-        <div class="col-9">
+        <div class="col-md-8 col-12">
             <div class="travel-details">
-                <h2>
-
-                </h2>
-                <div class="total_price">
-                    <p>Total Price</p>
-                    <p>EGP 1640</p>
-                </div>
-                <div class="break_down">
-                    <p>Fare Break Down</p>
-                    <ul class="list-unstyled list-group">
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                    </ul>
-                </div>
-                <div class="brand">
-                    <p>Brand</p>
-                    <p>Standard Economy <i class="fa fa-envelope"></i></p>
-                </div>
-                <div class="brand">
-                    <p><i class="fa fa-envelope"></i></p>
-                    <p>30 Kilograms Hand Luggage</p>
-                </div>
-                <button>Select</button>
+                <h4>
+                    
+                </h4>
+              
+                    <div class="total_price row">
+                        <p class="col-6">Total Price</p>
+                        <p class="col-6">EGP 1640</p>
+                    </div>
+                    <div class="break_down row">
+                        <p class="col-6">Fare Break Down</p>
+                        <div class="col-6">
+                            <p class="text-center" (click)="toggle_caret()" id="caret"> <i class="fa fa-caret-down"></i></p>
+                            <ul class="list-unstyled" *ngIf="showCaret">
+                                    <li>Adult x3 = EGP 2631</li>
+                                    <li>child x3 = EGP 2631</li>
+                                    <li>Infant x3 = EGP 2631</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    <div class="brand row">
+                        <p class="col-6">Brand</p>
+                        <p class="col-6">Standard Economy <i class="fa fa-lg fa-question-circle-o"></i></p>
+                    </div>
+                    <div class="brand row">
+                        <p class="col-6">
+                            <img src="../../assets/img/travel.svg" id="travel"/>
+                        </p>
+                        <p class="col-6">30 Kilograms Hand Luggage</p>
+                    </div>
+                    <button>Select</button>
+               
+               
             </div>
         </div>
-        <div class="col-3"></div>
+        <div class="col-md-4 col-12">
+                <div class="summary">
+                        <h4 class="summary_head rounded-circle">Flight Summary</h4>
+                        <div class="from_to">
+                            <p>
+                                <img src="../../assets/img/air-transport.svg"/>
+                                <span>Cairo</span> - <span>Dubai</span>
+                            </p>
+                            <p>
+                                <img src="../../assets/img/calendar.svg"/>
+                                Sat,12 Oct 2019,08:15
+                            </p>
+                        </div>
+                        <div class="tickets">
+                            <p>6 Tickets:on Way</p>
+                            <div class="tickets_details">
+                               
+                                    <ul class="list-unstyled">
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                        <li>Travellers 1 Adult <i class="fa fa-lg fa-caret-down"></i> </li>
+                                    </ul>
+                                
+                                
+                                    <ul class="list-unstyled">
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                        <li>EGP 3339.00</li>
+                                    </ul>
+                              
+                            </div>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span>EGP 31339.00</span>
+                        </div>
+                </div>
+        </div>
     </div>
 </div>
 </section>

@@ -1,3 +1,165 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.transform{transform: rotate(180deg)}
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .traveller-data{
+ 
     background: rgba(255,255,255,0.9);
+    .travel-details{
+        width: 50%;
+        border: 40px solid transparent;
+        -o-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+        border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+        margin-bottom: 30px;
+        margin-top: 15%;
+        color: $gray_one;
+        h4{
+            background: url('../../assets/img/ballon.svg'); 
+            @include  background-prop;
+            width: 60%;
+            height: 240px;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: -50%;
+            margin-bottom: 30px;
+            border: 4px solid #8BC34A;
+        }
+        div{
+            p{
+                #travel{fill: $blue}
+            }
+            p:first-child{
+                font-size: 1.3rem;
+                color: $blue;
+            }
+          
+        }
+        .brand{
+             i{
+                color: $orange;
+                float:right;
+        }}
+        button{
+            width:150px;
+            height: 50px;
+            background:url('../../assets/img/button.svg');
+            @include background-prop; 
+            display: block;
+            margin:auto;
+            border: none;
+            color: #FFF;
+            margin-top: 20px;
+        }
+       
+    }
+    .summary{
+        border: 40px solid transparent;
+        padding: 15px;
+        -webkit-border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch;
+        -o-border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch; 
+        border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch;
+        color: $blue;
+        margin-bottom: 30px;
+        
+        .summary_head{
+            width: 120px;
+            height: 115px;
+            background: #FFF;
+            background: url('../../assets/img/circil.svg');
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            padding-top: 40px;
+            text-align: center;
+            margin: auto;
+            margin-top: -25%;
+            margin-bottom: 20px;
+            @media only screen and (max-width : 768px){margin-top: -15%}
+            
+            
+        }
+        .from_to{
+            p{
+              
+                margin: auto;
+                text-align: center;
+                img{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    margin-inline-end: 3px;
+                }
+            }
+            p:first-child{
+                color: $gray_one;
+                font-size: 1.5rem;
+               
+            }
+            p:last-child{
+               
+                font-size: 0.8rem;
+                color: $gray_one;
+                img{
+                    width: 20px;
+                    height: 20px;;
+                }
+            }
+        }
+        .tickets{
+            color: $gray_one;
+            p{
+                margin-top: 2rem;
+                position: relative;
+                padding-bottom: 3px;
+                color: $blue;
+            }
+            p:after{
+                position: absolute;
+                top: 110%;
+                left: 0;
+                width: 40%;
+                content: "";
+                border-bottom: 2px dashed $blue;
+
+            }
+            .tickets_details{
+                display: flex;
+                border-bottom: 2px dashed $blue;
+                ul { 
+                    li{height: 2rem;}
+                }
+                ul:first-child{
+                    flex: 60%;
+                    i{
+                        display: inline-block;
+                        margin-inline-start: 1rem;
+                    }
+                }
+                ul:last-child{
+                    flex: 40%;
+                    font-size: 0.8rem;
+                    text-align: end;
+                }
+            }
+        }
+        .total{
+            display: flex;
+            padding-top:1rem;
+
+            span{
+                flex: 1;
+                font-size: 1.3rem;
+                color: $gray_one;
+                
+            }
+        }
+    }
 }

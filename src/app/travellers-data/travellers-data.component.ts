@@ -11,7 +11,7 @@ import { MenuItem } from 'primeng/api';
 export class TravellersDataComponent implements OnInit {
 
   constructor() { }
-
+  showCaret:boolean = false;
   items: MenuItem[];
 
   activeIndex: number = 1;
@@ -43,6 +43,11 @@ export class TravellersDataComponent implements OnInit {
 
        
   ];
+}
+toggle_caret(){
+    this.showCaret = !this.showCaret;
+    let element = document.getElementById("caret");
+    element.classList.toggle("transform");
 }
 }
 
