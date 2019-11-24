@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98.924" height="100.906" viewBox="0 0 98.924 100.906">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a2a2a2;
+      }
+
+      .cls-2 {
+        fill: #969696;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: #707070;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2367" data-name="Group 2367" transform="translate(-838.767 -187.198)">
+    <ellipse id="Ellipse_167" data-name="Ellipse 167" class="cls-1" cx="47.281" cy="47.281" rx="47.281" ry="47.281" transform="translate(843.128 187.313)"/>
+    <path id="Path_702" data-name="Path 702" class="cls-2" d="M2368.743,71.27a47.281,47.281,0,0,1-72.949,58.612,47.282,47.282,0,1,0,72.949-58.612Z" transform="translate(-1446.411 128.713)"/>
+    <path id="Path_703" data-name="Path 703" class="cls-3" d="M2326.542,58.472a47.281,47.281,0,1,0,47.282,47.281" transform="translate(-1439.493 134.069)"/>
+    <path id="Path_704" data-name="Path 704" class="cls-3" d="M2361.224,59.157l7.06-4.076-7.06-4.076Z" transform="translate(-1473.792 137.193)"/>
+    <path id="Path_705" data-name="Path 705" class="cls-4" d="M2293.654,156.686s7.083,25.322,39.134,28.509" transform="translate(-1445.517 92.971)"/>
+  </g>
+</svg>

@@ -1,0 +1,246 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.topform{
+    background-color: $blue;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+}
+.overlay{
+    background: rgba(255,255,255,0.9);
+   .result{
+       padding-top: 50px;
+       @media only screen and (max-width : 768px){
+       width: 90%;
+       }
+    }
+   .calendar{
+    border: 40px solid transparent;  
+    -webkit-border-image: url('../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+    -o-border-image: url('../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch; 
+    border-image:url('../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+    margin-bottom: 10%;
+    .table{
+        tr{
+            margin-bottom: 20px;
+            th,td{
+                border: none;
+                padding: 1.1em 0em;
+                text-align: center;
+            }
+            th{
+                border-right: 2px dashed $green;
+                color: $blue;
+                font-size: 1.1rem;
+            }
+        }
+      
+        thead{
+            tr{
+                border-bottom: 2px dashed $green;
+                th{border-right: none}
+                th:first-child{
+                    border-right: 2px dashed $green;
+                }
+
+            }
+        }
+        .active{color: $green;position: relative}
+        .active::after{
+            left: 15%;
+            top: 70%;
+            content: "";
+            height: 1px;
+            width: 70%;
+            background: $green;
+            position: absolute;
+            
+        }
+        
+    }
+    
+   }
+    .result-content{
+        position: relative;
+        .display{
+            border: 40px solid transparent;
+        
+            -webkit-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+            -o-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch; 
+            border-image:url('../../assets/img/frame\ flights.svg') 30 stretch;
+            color: $blue;
+            margin-bottom: 30px;
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        .sort_by{
+            display: flex;
+            span{
+                padding-top: 9%;
+                font-size: 1.6rem;
+                color: $blue;
+                @media only screen and (max-width : 1200px) {font-size: 1.2rem}
+            }
+            ul{
+               display: flex;
+                li{
+                    width: 20%;
+                    height: 190px;
+                    border: 35px solid transparent;
+                    background: url('../../assets/img/Group\ 2368.svg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    color: #1874B9;
+                    margin-bottom: 30px;
+                    margin-right: 4px;
+                    display: inline-block;
+                    text-align: center;
+                    padding-top: 6%;
+                    font-size: 1.2rem;
+                    position: relative;
+                    @media only screen and (max-width : 1200px){
+                        font-size: 0.9rem;
+                        height: 170px;
+                    }
+                    @media only screen and (max-width : 1024px){
+                        width: 19%;
+                        height: 160px;
+                        margin-right: 3px;
+                    }
+                }
+                li:not(:last-child)::after{
+                    content: "";
+                    position: absolute;
+                    right: -73%;
+                    top: 40%;
+                    background-image: url('../../assets/img/Group\ 2369h.svg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 18px;
+                    height: 22px;
+                    @media only screen and (max-width : 1200px){display: none}
+                }
+            }
+        }
+        .flights_content{
+            .flight{
+                border: 30px solid transparent;
+                margin-bottom: 20px;
+                -webkit-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+                -o-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch; 
+                border-image:url('../../assets/img/frame\ flights.svg') 30 stretch;
+                color: $gray_three;
+                font-size: 0.9rem;
+                position: relative;
+                .bookmark{
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                
+                }
+                .airline{
+                    text-align: center;
+                    span{font-size: 1.4rem;margin-top: -5px}
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+                .parts{
+                    display: flex;
+                    text-align: center;
+                    padding-top: 20px;
+                    .part{
+                        span{
+                            display: block;
+                            margin-bottom: 10px;
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                            i{
+                                color: $orange;
+                                font-size: 1rem;
+                            }
+                        }
+                        
+                        .direct{color: $green}
+                        .time{font-size: 1.4rem;color: $gray_one}
+                        .line{
+                            width: 100%;
+                            height: 2px;
+                            background-color: $gray_three;
+                            position: relative;
+                        }
+                        .line:after{
+                            position: absolute;
+                            left: -11px;
+                            top: -6px;
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            background: $gray_one;
+                            border-radius: 50%;
+                        }
+                        .line:before{
+                            position: absolute;
+                            right: -11px;
+                            top: -6px;
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-top: 7px solid transparent;
+                            border-left: 12px solid $gray_one;
+                            border-bottom: 7px solid transparent;
+                        }
+                       
+                    }
+                        .part:first-child{flex: 0.5}
+                        .part:nth-child(2){flex: 1;margin-top: 5px;}
+                        .part:last-child{flex: 0.5}
+                }
+                .price{
+                    padding-top: 20px;
+                    text-align: center;
+                    color: $gray_one;
+                    .flight_class{font-size: 1rem;color: $blue;margin-top: 10px;}
+                }
+                .details{
+                    margin-top: 50%;
+                    display: block;
+                    width: 100%;
+                    color: #FFF;
+                    background:url('../../assets/img/button.svg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: none;
+                    height: 40px;;
+                }
+            }
+        }
+     
+       
+    }
+    .result-content:after{
+        position: absolute;
+        right: -10%;
+        content: "";
+        background-image: url('../../assets/img/plan\ Shape.svg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 347px;
+        top: -3%;
+        width: 335px;
+        z-index: 99999999;
+        @media only screen and (max-width : 1200px){display: none}
+    }
+}

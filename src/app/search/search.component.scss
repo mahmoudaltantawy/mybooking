@@ -1,0 +1,329 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@font-face {
+    font-family: "cool";
+    src: url("../../assets/fonts/Fontspring-DEMO-gooddog_cool.otf");
+  }
+
+@font-face{
+    font-family: "Acme";
+    src: url("../../assets/fonts/Acme-Regular.ttf");
+}
+.container{
+    max-width: 80%;
+    @media only screen and (max-width : 1200px) {
+        max-width: 100%;
+    } 
+}
+.search_form{
+    height: 370px;
+    background: url('../../assets/img/Group\ 2277.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    .flight_type{
+        text-align: center;
+        color: #FFF;
+        width: 35%;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        .mat-radio-button{
+            margin-left: 30px !important;
+        }
+        @media only screen and (max-width : 1200px) {
+            width: 40%;
+        } 
+        @media only screen and (max-width : 991px) {
+            width: 60%;
+        } 
+        @media only screen and (max-width : 768px) {
+            width: 100%;
+            margin-top: 10px;
+        } 
+    }
+}
+.search_home{
+    position: relative;
+    height: 777px;
+    margin-top: 0;
+    background: url('../../assets/img/airplan.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        color: $blue;
+        padding-top: 100px;
+        font-size: 3rem;
+        margin-bottom: 165px;
+        @media only screen and (max-width : 991px){
+            margin-bottom: 20px;
+        }
+        font-family: "cool";
+        p:last-child{
+            margin-top: 25px;
+        }
+
+        
+    }
+    .press_category{
+        
+        ul{
+            width: 40%;
+            margin: auto;
+            display: flex;
+            @media only screen and (max-width : 576px){
+                width: 80% !important;
+            }
+            @media only screen and (max-width : 480px){
+                width: 100% !important;
+            }             
+            li{
+                flex: 1;
+                background: url('../../assets/img/Group\ 7.svg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 155px;
+                border-radius: 50%;
+                text-align: center;
+                margin-right: 25px;
+
+                p{
+                    color: $blue;
+                    font-size: 1.2rem;
+                    font-family: "Acme";
+                   
+                    span{
+                        width: 60px;
+                        height: 60px;
+                        display: block;
+                        margin: auto;
+                        background: url('../../assets/img/Group\ 2293.svg');
+                        border-radius: 50%;
+                        margin-top: 25px;
+                        background-size: cover;
+                        background-position: center center;
+                        
+                        img{
+                            width: 60%;
+                            height: 80%;
+                        }
+
+                    }
+                   
+                }
+            }
+            li:first-child{
+                span{
+                    img{
+                        width: 80% !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+            li:nth-child(2){
+                span{
+                    img{
+                        width: 70% !important;
+                        height: 90% !important;
+                    }
+                }
+            }
+
+            @media only screen and (max-width : 1200px) {
+                    width: 60%;
+            }
+            @media only screen and (max-width : 991px){
+
+            }
+            @media only screen and (max-width : 768px){
+
+            }
+            @media only screen and (max-width : 480px){
+
+            }
+            @media only screen and (max-width : 360px){
+
+            }
+        }
+    }
+    
+    .flight_form{
+        
+        .flight_fields{
+            margin-top: 30px;
+            @media only screen and (max-width : 576px) {
+                width: 85%;
+                margin:auto;
+            }
+            @media only screen and (max-width : 480px) {
+                width: 100%;
+            }
+            input{
+                height: 40px;
+                color: $gray_three;
+                padding-left: 18%;
+                @media only screen and (max-width : 1024px) {
+                    padding-left: 0;
+                    text-align:center;
+                }
+                @media only screen and (max-width : 576px){
+                    margin-top: 5px;
+                } 
+            }
+            .dep_ret{
+                display:flex;
+                padding: 0;
+                @media only screen and (max-width : 576px){
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+            .travellers{
+                color: $gray_one;
+                font-weight: 560;
+               
+
+            }
+            .dropdown-menu{
+                padding: 15px;
+                width: 157%;
+                @media only screen and (max-width : 576px){width: 100%}
+                border-radius: 8px;
+                ul.list-group{
+                    li {
+                        margin-top: 20px;
+                        border-bottom: 1px solid $gray_two;
+                        .form-group{
+                            display: flex;
+                            
+                            label{width: 50%;color: $blue;font-weight: bold}
+                            input{width: 50%;padding: .375rem .75rem;border-color: $green;border-width: 2px;}
+                            select{
+                                width: 50%;
+                                border-color: $green;
+                                border-width: 2px;
+                            }
+                        }
+                        .form-check {
+                            
+                            input.form-check-input{width: auto;visibility: hidden;}
+                        }
+                       
+                        
+                    }
+                    li:last-child{border: none}
+                    .travellers_info{
+                        h4{margin-bottom: 15px;}
+                        .age{
+                            display: flex;
+                            p{
+                                flex: 1;
+                                font-size: 1.1rem;
+                                color: $gray_one;
+                                span{
+                                    font-size: 0.8rem;
+                                    color: $gray_three;
+                                }
+                                img{
+                                    width: 18px;
+                                    height: 18px;
+                                    margin-right: 7px;
+                                }
+                                
+                            }
+                            .calc{
+                                flex: 1;
+                                display: flex;
+                                input{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                button{
+                                    width: 35%;
+                                    background: none;
+                                    border: none;
+                                    font-size: 1.5rem;
+                                    color: $blue;
+                                    height: 30px;
+                                }
+                                
+                            }
+                        }
+                        .children{
+                            margin-top: 10px;
+                            .form-inline{
+                                float: left;width: 33%;margin-bottom: 10px;
+                                select{border-color: $green;border-width: 2px;margin-left: 10px;}
+                            }
+                        }
+                    }
+                }
+               
+                
+            }
+            button{
+                height: 40px;
+            }
+            .btn{
+                background: $orange;
+                border-color: $orange;
+                width: 100%;
+                font-weight: 560;
+                font-size: 1.2rem;
+            }
+            span.font {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 28px;
+                top: 5px;
+                @media only screen and (max-width : 768px) {
+                    width: 20px;
+                    height: 20px;
+                    top: 11px; 
+                } 
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .mat-checkbox{
+                margin-right: 30px;
+                color: #FFF; 
+            }
+            .origin{
+                position: relative;
+                .swap{
+                    width: 35px;
+                    height: 35px;
+                    position: absolute;
+                    right: -16px;
+                    top: 5px;
+                    @media only screen and (max-width : 576px){
+                        right: 30px;
+                        top: 30px;
+                        z-index: 9;
+                        background: #fec044;
+                        transform: rotate(90deg);
+                        border-radius: 50%;
+                    }
+
+
+                }
+            }
+        
+            
+            
+            
+            
+        }
+        
+    }
+}

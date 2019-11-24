@@ -1,0 +1,185 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flight-details{
+    .mountain{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    width: 50%;
+    border: 30px solid transparent;
+    background: #FFF;
+    margin-bottom: 20px;
+    -webkit-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    -o-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch; 
+    border-image:url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    min-height: 600px;
+    margin: 30px auto;
+    .choose_form{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2%;
+        li{
+            flex: 1;
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            margin-top: -20%;
+            margin-right: 5%;
+            font-size: 1.3rem;
+            padding-top: 10%;
+            color: $gray_one;
+            span{display: block}
+            
+        }
+        li:first-child{
+            background: url('../../assets/img/sign1.svg');
+            background-size: contain;
+            background-position: center center;
+            background-repeat:no-repeat; 
+            text-align: center;
+           
+        }
+        li:last-child{
+            background: url('../../assets/img/sign2.svg');
+            background-size: contain;
+            background-position: center center;
+            background-repeat:no-repeat; 
+            text-align: center;
+        }
+    }
+   
+    .flight_info{
+        display: flex;
+        width: 80%;
+        margin: auto;
+       
+        p{
+            flex: 1;
+            font-size: 1.3rem;
+            text-align: center;
+            color:$gray_one;
+            span{
+                margin-left: 5px;
+            }
+            
+        }
+    }
+    .flight_info_multi{
+        p{ 
+            color: $gray_one;
+            span{
+                font-weight: bold;
+                margin-left: 3px;
+            }
+        }
+    }
+    .prices {
+        border:none;
+        .list-group-item{
+            border: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $gray_one;
+
+        }
+        li:first-child{
+            color: $blue;
+            font-weight: bold
+        }
+     
+    }
+    .from-to{
+        margin-top: 5%;
+        display: flex;
+        position: relative;
+        .surface{flex: 10%}
+        p{
+            color: $gray_one;
+            flex: 90%;
+            .departure{
+                color: $blue;
+                font-size: 1.3rem;
+                margin-right: 2%;
+            }
+            .marked{
+                color: $blue;
+                font-size: 0.8rem;
+                margin-right: 5px;
+                font-weight: bold
+            }
+        }
+        
+    }
+    .from-to::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 30px;
+        border-bottom: 2px dashed $blue;
+        width: 100%;
+        height: 2px;;
+    }
+    .flight_info_det{
+        display: flex;
+        margin-top: 20px;
+        .airline{
+            flex: 20%;
+            padding-top: 3%;
+            text-align: center;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+            h6{
+                color: $blue;
+                font-size: 1.2rem;
+                margin-top: 5px;
+            }
+        }
+        .list-group{
+            flex: 80%;
+            .list-group-item{
+                display: flex;
+                border: none;
+                padding: 0.1rem 1.25rem;
+                p{
+                    font-size: 1.2rem;
+                    color: $gray_one;
+                }
+            }
+            img{
+                width: 20px;
+                height: 20px;
+                margin-right: 20px
+            }
+        }
+
+    }
+    .btn{
+       
+        display: block;
+        margin: auto;
+        background: url('../../assets/img/button.svg');
+       
+        width: 150px;
+        height: 50px;
+        
+        color: #FFF;
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        @include background-prop;
+    }
+  
+}

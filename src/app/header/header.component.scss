@@ -1,0 +1,126 @@
+
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@font-face {
+  
+    font-family: "Asap-Regular";
+    src: url("../../assets/fonts/asap/Asap-Bold.otf");
+    font-family: "Asap-bold";
+    src: url("../../assets/fonts/asap/Asap-Bold.otf");
+
+  }
+html{
+    font-size: 16px;
+    background: url('../../assets/img/journey\ pattern-01.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .container{max-width: 80%;}
+    
+}
+header{
+    height: 100px;
+   
+    .content{
+        background:rgba(255,255,255,0.9);
+        height: 100%;
+        nav{
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            
+                .navbar-toggler-icon{
+                    i {color: $green}
+                }
+                #navbarSupportedContent{
+                    margin-top: 13px;
+                   
+                    a{
+                        font-size: 1.4rem;
+                        color: $blue;
+                        cursor: pointer;
+                        
+                        transition: 0.3s ease-out;
+                        &:hover{
+                            color: $green;
+                            
+                            
+                            
+
+                        }
+                        
+                    }
+                    .active>.nav-link {
+                        color: $green;
+                        font-weight: 560;
+                    }
+                    .my_booking{
+                        margin-left: 10px;
+                    }
+                   
+                    .signin-up{
+                        button{
+                            width: 100px;
+                            height: 37px;
+                            @media only screen and (max-width : 480px){
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+                        .btn-outline-success{
+                            color: $blue;
+                            border-color: $blue;
+                            font-size: 1.2rem;
+                            padding: 0;
+                            background-color: #FFF;
+                            &:hover{background: $blue; color: #FFF}
+                        }
+                        button:first-of-type{
+                            margin-right: 10px;
+                            margin-left: 10px;
+                            @media only screen and (max-width : 480px){
+                                margin: auto;
+                                margin-top: 20px !important;
+
+                            }
+                        }
+                        button:last-of-type{
+                            background: $blue;
+                            color: #FFF;
+                        }
+                    }
+                    .lang_curr{
+                        color: $blue;
+                        font-size: 1.4rem;
+                        
+                    }
+                    
+                    
+                }
+            
+                .navbar-brand{
+                    img{
+                        height: 73px;
+                        margin-top: 13px;
+                        margin-bottom: 13px;
+                    }
+                }
+           
+                @media only screen and (max-width : 1200px) {
+                    width: 100%
+                    
+                }
+           
+            
+           
+        }
+    }
+    @media only screen and (max-width : 991px){
+            height: auto
+            
+    }
+}

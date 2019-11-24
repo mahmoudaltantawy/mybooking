@@ -1,0 +1,153 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$journey-primary: mat-palette($mat-indigo);
+$journey-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$journey-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$journey-theme: mat-light-theme($journey-primary, $journey-accent, $journey-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($journey-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    
+    height: 100%;
+    font-size: 16px;
+    @media only screen and (max-width : 1024px){
+        font-size: 14px;
+    }
+    @media only screen and (max-width : 991px){
+        font-size: 12px;
+    }
+}
+$orange:#FDC32C;
+$green:#8DC043;
+$blue:#1874B9;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+  
+    font-family: "Asap-Regular";
+    src: url("./assets/fonts/asap/._Asap-Regular.otf");
+  }
+body {
+    
+     margin: 0; 
+     background: url('./assets/img/journey\ pattern-01.png');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     .container{
+         max-width: 80%;
+         @media only screen and (max-width : 1200px) {max-width: 90%}
+         @media only screen and (max-width : 1024px) {max-width: 100%}
+        }
+     .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple,
+      .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple{background: $orange}
+      .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+          border-color: $orange
+      }
+      .mat-checkbox-frame{
+          border-color: #FFF;
+      }
+      .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+      .mat-checkbox-checked.mat-accent .mat-checkbox-background{background: $orange}
+      .mat-checkbox-layout{
+        .mat-checkbox-inner-container{
+            height: 20px ;
+            width: 20px ;
+        }
+    }
+    .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+        background: $orange;;
+    }
+    .mat-checkbox-frame{border-width: 1px;}
+    .filter_slice .mat-checkbox-frame{
+        border-color: $green !important;
+    }
+    .modal-content{
+        background: none;
+        border:none;
+    }
+    .modal-backdrop{
+        background: $blue;
+    }
+    .collapse:not(.show){display: block}
+    // custom Steps
+    .ui-steps .ui-steps-item.ui-state-highlight .ui-steps-title{font-weight: normal}
+    .ui-steps:before{display: none}
+    .steps-custom{
+       width: 60%;
+       margin: auto;
+        .ui-steps-item{
+            .ui-menuitem-link{
+                span.ui-steps-number{
+                    width: 120px;
+                    height: 120px;
+                    font-size: 4rem;
+                    padding-top: 40px;
+                    background: url('../src/assets/img/step.svg');
+                    @include background-prop;
+                }
+                span.ui-steps-title{
+                    font-size: 1.5rem;
+                    color: $gray_one;
+                }
+               
+            }
+           
+        }
+        .ui-steps-item:first-child{
+            span.ui-steps-number{
+                background: url('../src/assets/img/Group\ 1606.svg');
+                @include background-prop;
+            }
+            span.ui-steps-title{
+                    
+                color: $green;
+            }
+        }
+        
+        .ui-steps-current{
+            .ui-menuitem-link{
+                span.ui-steps-number{
+                    background: url('../src/assets/img/Group\ 361.svg');
+                    @include background-prop;
+                }
+                span.ui-steps-title{
+                    
+                    color: $blue;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+

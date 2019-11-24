@@ -1,0 +1,55 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@font-face {
+    font-family: "cool";
+    src: url("../../assets/fonts/Fontspring-DEMO-gooddog_cool.otf");
+  }
+
+@font-face{
+    font-family: "Acme";
+    src: url("../../assets/fonts/Acme-Regular.ttf");
+}
+.filter_slice{
+    border: 40px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch;
+    -o-border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch; 
+    border-image: url('../../assets/img/frame\ Filter.png.svg') 30 stretch;
+    color: $blue;
+    margin-bottom: 30px;
+    
+    .filter_head{
+        width: 120px;
+        height: 115px;
+        background: #FFF;
+        background: url('../../assets/img/circil.svg');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        padding-top: 40px;
+        text-align: center;
+        margin: auto;
+        margin-top: -25%;
+        margin-bottom: 20px;
+        @media only screen and (max-width : 768px){margin-top: -15%}
+        
+        
+    }
+    
+        .mat-checkbox{
+            width: 49%;
+            display: inline-block;
+           
+                img{
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 10px;
+                }
+           
+        }
+    
+}
