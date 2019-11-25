@@ -23,7 +23,9 @@ import { FlightdetailsComponent } from './flightdetails/flightdetails.component'
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TravellersDataComponent } from './travellers-data/travellers-data.component';
 import {StepsModule,MenuItem} from 'primeng/primeng';
-  
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'; 
 
 @NgModule({
   declarations: [
@@ -53,7 +55,10 @@ import {StepsModule,MenuItem} from 'primeng/primeng';
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     StepsModule,
-   
+    NgSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BsDatepickerModule.forRoot()
    
     
   ],
