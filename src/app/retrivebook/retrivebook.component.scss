@@ -5,8 +5,10 @@ $gray_one:#707070;
 $gray_two:#E6E6E6;
 $gray_three:#A2A2A2;
 .retrive_book{
+    width: 35%;
     background: #FFF;
-    margin-top: 20%;
+    margin: auto;
+    margin-top: 5%;
     margin-bottom: 20px;
     border: 30px solid transparent;
     -webkit-border-image: url('../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;

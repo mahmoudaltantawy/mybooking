@@ -1,0 +1,88 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.payment{
+    .mountain{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    width: 80%;
+    margin: auto;
+    border: 30px solid transparent;
+    background: #FFF;
+   
+    -webkit-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    -o-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch; 
+    border-image:url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    .tab-pane{
+        color: $blue;
+        h4{font-size: 1.3rem;}
+        span{color: $gray_one}
+        .total_amount{
+           margin-bottom: 1rem;
+           h4:last-of-type{color: $gray_one}
+           
+        }
+        .reference{
+            span{
+                
+                font-size: 1.1rem;
+                margin-inline-start: 5px;
+            }
+            .start{
+                text-align: start;
+            }
+           .end{
+                text-align: end;
+            }
+        }
+        .from_to{
+            width: 85%;
+            margin: auto;
+            margin-top: 4rem;
+            .from{
+                img{width: 25px; height: 25px;}
+                span{
+                    img{
+                        display: block;
+                        margin: auto;
+                    }
+                }
+                p{color: $gray_one}
+                .date{display: block}
+            }
+            .line{
+                .br{
+                    width: 100%;
+                height: 1px;
+                background: $blue;
+                margin: 5px 0px;
+                }
+                
+            }
+        }
+        .details{
+            margin-top: 2rem;
+            h3{
+                color: $blue;
+            }
+            ul li{
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+
+    
+}

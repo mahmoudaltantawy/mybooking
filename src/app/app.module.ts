@@ -26,6 +26,9 @@ import {StepsModule,MenuItem} from 'primeng/primeng';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'; 
+import {PanelModule} from 'primeng/panel';
+import { SeatsComponent } from './seats/seats.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     RegisterComponent,
     RetrivebookComponent,
     FlightdetailsComponent,
-    TravellersDataComponent
+    TravellersDataComponent,
+    SeatsComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     NgSelectModule,
     FormsModule,
     ReactiveFormsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    PanelModule
    
     
   ],

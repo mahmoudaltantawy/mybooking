@@ -1,0 +1,117 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.standard{background-color: $orange}
+.unavailable{background-color: $gray_two}
+.selected{background-color: $green}
+.premium{background-color: $blue}
+.transform{transform: rotate(180deg)}
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.close{
+    position: absolute;
+    top: 2%;
+    right: 20%;
+    background: $gray_two;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: $gray_one;
+}
+.seats{
+
+    background-color: #FFF;
+    border: 40px solid transparent;
+        -o-border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+        border-image: url('../../assets/img/frame\ flights.svg') 30 stretch;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    .title_circle{
+        width: 160px;
+        border-radius: 50%;
+        height: 160px;
+        background:url('../../assets/img/sign1.svg');
+        @include background-prop(); 
+        margin: auto;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 50px;
+        color: $orange;
+        padding-top: 45px;
+        span{
+            display: block;
+            font-size: 1.5rem;
+        }
+    }
+    .seat-info{
+        h4{
+            color: $blue;
+            margin-bottom: 2rem;
+            span{color: $gray_one}
+        }
+        ul {
+            li{
+                display: flex;
+                margin-bottom: 5px;
+
+                span:first-child{
+                width: 35px;
+                height: 30px;
+                -webkit-margin-end: 4px;
+                margin-inline-end: 4px;
+                text-align: center;
+                display: inline-block;  
+                border-radius: 5px;
+                
+                margin-inline-end: 1rem;
+                }
+            }
+        }
+    }
+    .buttons{
+        margin-top: 2rem;
+        display: flex;
+        a{
+            flex: 40%;
+            height: 35px;
+            color: $blue;
+            text-align: center;
+            cursor: pointer;
+            padding-top: 5px;
+            border-radius: 5px;
+            background: $gray_two;
+        }
+        a:first-child{
+            margin-inline-end: 10%;
+            background: $blue;
+            color: #FFF;
+        }
+    }
+    .seat{
+        .seat-row{
+            display: flex;
+            margin-bottom: 1rem;
+            span{
+                flex: 1;
+                width: 1rem;
+                height: 2.5rem;
+                -webkit-margin-end: 4px;
+                margin-inline-end: 4px;
+                text-align: center;
+                display: inline-block;  
+                border-radius: 5px;
+            }
+            
+        }
+        
+    }
+}
