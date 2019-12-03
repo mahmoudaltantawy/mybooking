@@ -56,7 +56,9 @@ $gray_three:#A2A2A2;
     src: url("./assets/fonts/asap/._Asap-Regular.otf");
   }
 body {
-    
+    a:focus{
+        outline: none;
+    }
      margin: 0; 
      background: url('./assets/img/journey\ pattern-01.png');
      background-size: cover;
@@ -113,6 +115,7 @@ body {
                     padding-top: 40px;
                     background: url('../src/assets/img/step.svg');
                     @include background-prop;
+                    color: #FFF;
                 }
                 span.ui-steps-title{
                     font-size: 1.5rem;
@@ -196,6 +199,11 @@ body {
                 }
                 a.active{color: $orange}
                
+            }
+        }
+        .payment_methods{
+            .nav-tabs.nav{
+                display: none
             }
         }
         

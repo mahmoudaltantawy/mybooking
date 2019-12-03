@@ -1,0 +1,276 @@
+<section class="ticket">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-12">
+                <div class="dear_customer">
+                    <div class="content">
+                        <p>Dear MR</p>
+                        <p>Mahmoud</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="thanks">
+                    <span>Thank You For Choosing Online</span>
+                    <h4>journey.info</h4>
+                    <span>Please find below your details</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="ticket_sample">
+                    <!-- ticket Head -->
+                    <div class="ticket_head">
+                        <div>
+                            <img src="../../assets/img/logo travwarewhite-01.png" />
+                        </div>
+
+                        <p>
+                            <span>FIRST CLASS</span>
+                            <span>Confirmed</span>
+                        </p>
+                    </div>
+                    <!-- ticket Body -->
+                    <div class="ticket_body">
+                        <div class="flight_info">
+                            <div class="flight_duration">
+                                <p>
+                                    Flight Duration
+                                    <span>0 Day 7 Hours 45 Minutes 0 Second</span>
+                                </p>
+                                <h3>
+                                    Flight Number
+                                    <span>502</span>
+                                </h3>
+                            </div>
+                            <div class="from_to">
+                                <h5>
+                                    FROM:
+                                    <span>USA</span>
+                                </h5>
+                                <p>
+                                    <img src="../../assets/img/Path 2297.svg" />
+                                    <span>Royal Jordanian</span>
+                                </p>
+                                <h5>
+                                    TO:
+                                    <span>USA</span>
+                                </h5>
+                            </div>
+                            <div class="from_to_details">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h5>Cairo-Dubai 10/10/2019
+                                        </h5>
+                                        <h5>USA-URB 18/10/2019
+                                        </h5>
+                                    </li>
+                                    <li>
+                                        <h5>Dubai-USA 14/10/2019
+                                        </h5>
+                                        <h5>URB-Cairo 20/10/2019
+                                        </h5>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="flight_price">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h4>Price</h4>
+                                    <span>3871 EGP</span>
+                                </li>
+                                <li>
+                                    <h4>Product ID</h4>
+                                    <span>TW-1479</span>
+                                </li>
+                                <li>
+                                    <h4>Reservation Number</h4>
+                                    <span>QB6FKC</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ticket_footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="ticket_table">
+                    <table class="table">
+                        <tr>
+                            <th>Number</th>
+                            <th>Title</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Ticket Id</th>
+                            <th>Total Price</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MR</td>
+                            <td>Mahmoud El-tantawy</td>
+                            <td>ADT</td>
+                            <td>512-123456789</td>
+                            <td>3723EGP</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MR</td>
+                            <td>Mahmoud El-tantawy</td>
+                            <td>ADT</td>
+                            <td>512-123456789</td>
+                            <td>3723EGP</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MR</td>
+                            <td>Mahmoud El-tantawy</td>
+                            <td>ADT</td>
+                            <td>512-123456789</td>
+                            <td>3723EGP</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MR</td>
+                            <td>Mahmoud El-tantawy</td>
+                            <td>ADT</td>
+                            <td>512-123456789</td>
+                            <td>3723EGP</td>
+                        </tr>
+
+
+                    </table>
+                    <div class="table_footer"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="note">
+        <div class="row">
+            <p class="col-md-8 col-12">
+                <span>Note:</span>
+                Only e-ticket number are displayed when they are issued
+            </p>
+            <a class="col-md-2 col-6" (click)="openModal(baggages)">Flight Baggages</a>
+            <a class="col-md-2 col-6" (click)="openModal(rules)">Fare Rules</a>
+        </div>
+    </div>
+
+
+</section>
+
+<ng-template #rules>
+    <section class="important_msg">
+        <span class="mount mount_left">
+            <img src="../../assets/img/mountain.svg" />
+        </span>
+        <span class="mount mount_right">
+            <img src="../../assets/img/Group 1227.svg" />
+        </span>
+        <div class="container-fluid">
+            <h4 class="title_circle">
+                <span>Fare</span>
+                <span>Rules</span>
+
+            </h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum ea accusamus,
+                    esse facilis excepturi vero,
+                    nobis aliquam repudiandae minima sed illo recusandae,
+                    pariatur ducimus eaque corrupti fugiat libero officia.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum ea accusamus,
+                    esse facilis excepturi vero,
+                    nobis aliquam repudiandae minima sed illo recusandae,
+                    pariatur ducimus eaque corrupti fugiat libero officia
+                </p>
+
+
+                <div class="buttons">
+
+                    <a (click)="modalRef.hide()">Close</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+</ng-template>
+<ng-template #baggages>
+    <section class="important_msg baggages_wide">
+        <span class="mount mount_left">
+            <img src="../../assets/img/mountain.svg" />
+        </span>
+        <span class="mount mount_right">
+            <img src="../../assets/img/Group 1227.svg" />
+        </span>
+        <div class="container-fluid">
+            <h4 class="title_circle">
+                <span>Flight</span>
+                <span>Baggages</span>
+
+            </h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body baggages">
+                <div class="content">
+                        <img class="plane" src="../../assets/img/surface1.svg"/>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                Flight Baggages from <span>CAI</span> to <span>AMM</span>
+                            </li>
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                Flight Number: <span>502</span>
+                            </li>
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                1 PC Hand Luggage For ADT
+                            </li>
+                            
+                        </ul>
+                </div>
+                <div class="content last">
+                        <img class="plane" src="../../assets/img/surface1.svg"/>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                Flight Baggages from <span>CAI</span> to <span>AMM</span>
+                            </li>
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                Flight Number: <span>502</span>
+                            </li>
+                            <li>
+                                <img src="../../assets/img/placeholder.svg" />
+                                1 PC Hand Luggage For ADT
+                            </li>
+                            
+                        </ul>
+                </div>
+                <div class="buttons">
+
+                    <a (click)="modalRef.hide()">Close</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</ng-template>

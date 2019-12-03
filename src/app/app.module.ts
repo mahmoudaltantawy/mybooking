@@ -29,6 +29,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import {PanelModule} from 'primeng/panel';
 import { SeatsComponent } from './seats/seats.component';
 import { PaymentComponent } from './payment/payment.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { PaymentComponent } from './payment/payment.component';
     FlightdetailsComponent,
     TravellersDataComponent,
     SeatsComponent,
-    PaymentComponent
+    PaymentComponent,
+    ConfirmationComponent,
+    TicketComponent
   ],
   imports: [
     BrowserModule,

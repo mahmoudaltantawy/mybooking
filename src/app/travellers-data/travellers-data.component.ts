@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit, TemplateRef} from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
@@ -19,11 +19,13 @@ export class TravellersDataComponent implements OnInit {
     traveller_data: FormGroup;
     modalRef: BsModalRef;
     show: boolean = true;
+   
     constructor(private fb: FormBuilder, private modalService: BsModalService) { }
 
 
-    ngOnInit() {
 
+    ngOnInit() {
+      
         this.items = [{
             label: 'Search Flight',
             command: () => {
@@ -70,6 +72,7 @@ export class TravellersDataComponent implements OnInit {
 
         });
     }
+
 
     toggle_caret() {
         this.showCaret = !this.showCaret;

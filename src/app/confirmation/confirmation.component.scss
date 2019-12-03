@@ -1,0 +1,87 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.confirmation{
+   
+    .mountain{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    width: 80%;
+    margin: auto;
+    border: 30px solid transparent;
+    background: #FFF;
+   
+    -webkit-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    -o-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch; 
+    border-image:url('../../assets/img/Group\ 2367.svg') 30 stretch;
+    h2{
+    background: url('../../assets/img/Group\ 1606.svg');
+    @include background-prop();
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -15%;
+    margin-bottom: 3rem;
+    color: #FFF;
+    text-align: center;
+    padding-top: 6%;
+    }
+    .info{
+        text-align: center;
+        color: $blue;
+        border-bottom: 2px dashed $blue;
+        margin-bottom: 2rem;
+        position: relative;
+        h4{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
+        .plane{
+            position: absolute;
+            left: -1rem;
+            bottom: -0.1rem;
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .details{
+        color: $gray_one;
+        text-align: center;
+        ul {
+            li{
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .get_tickets{
+        text-align: center;
+        button{
+            background: url('../../assets/img/Group\ 378.svg');
+            @include background-prop();
+            background-size: contain;
+            border: none;
+            width: 200px;
+            height: 50px;
+            color: #FFF;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+}

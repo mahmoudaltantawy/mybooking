@@ -11,6 +11,7 @@ export class PaymentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
   @ViewChild('staticTabs', { static: false }) staticTabs: TabsetComponent;
  
