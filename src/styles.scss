@@ -56,9 +56,10 @@ $gray_three:#A2A2A2;
     src: url("./assets/fonts/asap/._Asap-Regular.otf");
   }
 body {
-    a:focus{
+    a:focus,button:focus{
         outline: none;
     }
+    
      margin: 0; 
      background: url('./assets/img/journey\ pattern-01.png');
      background-size: cover;
@@ -209,6 +210,53 @@ body {
         
 
     }
+
+    // tabs For flight details
+    .flight-details{
+        
+        .nav{
+            width: 70%;
+            .nav-item {
+                margin-bottom: 40px;
+                a{
+                    font-size: 1.5rem;
+                    background: url('../src/assets/img/sign1.svg');
+                    @include background-prop();
+                }
+            }
+        
+        }
+    }
+    .loginandregisterContainer{
+        .nav{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            .nav-item {
+                flex: 1;
+                margin-bottom: 40px;
+                
+                a{
+                    width: 150px;
+                    height: 150px;
+                    font-size: 1.5rem;
+                    background: url('../src/assets/img/sign1.svg');
+                    @include background-prop(); 
+                    text-align: center;
+                    color: $gray_one;
+                    display: block;
+                    margin: auto;
+                    margin-top: -90px;
+                    padding-top: 25%;
+                }
+                a.active{
+                    color: $green;
+                }
+            }
+        
+        }
+    }
+     
     
 }
 

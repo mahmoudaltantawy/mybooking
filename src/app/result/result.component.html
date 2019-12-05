@@ -271,7 +271,7 @@
 
                                         </div>
                                         <div class="col-sm-2">
-                                            <button class="details" routerLink='/flight-details'>Details</button>
+                                            <button class="details" (click)="openModal(flight_details)">Details</button>
                                         </div>
                                     </div>
                                 </div>
@@ -629,3 +629,7 @@
         </div>
     </div>
 </section>
+<ng-template #flight_details>
+       
+    <app-flightdetails></app-flightdetails>
+</ng-template>

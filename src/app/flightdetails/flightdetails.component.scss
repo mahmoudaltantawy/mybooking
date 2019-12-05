@@ -10,6 +10,7 @@ $gray_three:#A2A2A2;
     background-size: cover;
 }
 .flight-details{
+   
     .mountain{
         img{
             width: 100px;
@@ -24,41 +25,8 @@ $gray_three:#A2A2A2;
     -o-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch; 
     border-image:url('../../assets/img/Group\ 2367.svg') 30 stretch;
     min-height: 600px;
-    margin: 30px auto;
-    .choose_form{
-        display: flex;
-        width: 70%;
-        margin: auto;
-        margin-bottom: 2%;
-        li{
-            flex: 1;
-            height: 170px;
-            width: 170px;
-            border-radius: 50%;
-            margin-top: -20%;
-            margin-right: 5%;
-            font-size: 1.3rem;
-            padding-top: 10%;
-            color: $gray_one;
-            span{display: block}
-            
-        }
-        li:first-child{
-            background: url('../../assets/img/sign1.svg');
-            background-size: contain;
-            background-position: center center;
-            background-repeat:no-repeat; 
-            text-align: center;
-           
-        }
-        li:last-child{
-            background: url('../../assets/img/sign2.svg');
-            background-size: contain;
-            background-position: center center;
-            background-repeat:no-repeat; 
-            text-align: center;
-        }
-    }
+    margin: 5% auto;
+
    
     .flight_info{
         display: flex;

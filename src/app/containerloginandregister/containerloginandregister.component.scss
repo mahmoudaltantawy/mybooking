@@ -5,6 +5,7 @@ $gray_one:#707070;
 $gray_two:#E6E6E6;
 $gray_three:#A2A2A2;
 .loginandregisterContainer{
+    
     width: 65%;
     border: 30px solid transparent;
     background: #FFF;
@@ -13,7 +14,7 @@ $gray_three:#A2A2A2;
     -o-border-image: url('../../assets/img/Group\ 2367.svg') 30 stretch; 
     border-image:url('../../assets/img/Group\ 2367.svg') 30 stretch;
     min-height: 600px;
-    margin: 30px auto;
+    margin: 100px auto;
     .choose_form{
         display: flex;
         width: 50%;

@@ -1,4 +1,4 @@
-<section class="loginandregisterContainer">
+<!-- <section class="loginandregisterContainer">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -13,12 +13,12 @@
             </div>
             <div class="col-5">
                 <div class="love_travel">
-                    <img src="../../assets/img/imageSign.svg"/>
+                    <img src="../../assets/img/imageSign.svg" />
                 </div>
             </div>
             <div class="col-1"></div>
             <div class="col-6">
-              <app-login></app-login>
+                <app-login></app-login>
             </div>
         </div>
     </div>
@@ -38,13 +38,51 @@
             </div>
             <div class="col-5">
                 <div class="love_travel">
-                    <img src="../../assets/img/imageSign.svg"/>
+                    <img src="../../assets/img/imageSign.svg" />
                 </div>
             </div>
             <div class="col-1"></div>
             <div class="col-6">
-              <app-register></app-register>
+                <app-register></app-register>
             </div>
         </div>
+    </div>
+</section> -->
+<section class="loginandregisterContainer">
+    <div class="container">
+        <tabset type="pills">
+            <tab heading="Sign In">
+
+                <div class="row">
+                    <div class="col-5">
+                        <div class="love_travel">
+                            <img src="../../assets/img/imageSign.svg" />
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-6">
+                        <app-login></app-login>
+                    </div>
+                </div>
+
+
+            </tab>
+            <tab heading="Sign Up">
+
+                <div class="row">
+                    <div class="col-5">
+                        <div class="love_travel">
+                            <img src="../../assets/img/imageSign.svg" />
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-6">
+                        <app-register></app-register>
+                    </div>
+                </div>
+
+
+            </tab>
+        </tabset>
     </div>
 </section>
