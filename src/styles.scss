@@ -256,7 +256,32 @@ body {
         
         }
     }
-     
+
+    // start hotel
+    .hotel{
+        .ng-select {
+            
+            
+            .ng-select-container .ng-value-container .ng-placeholder{
+                margin:auto;
+                color: $gray_one;
+                
+            }
+            
+        } 
+    } 
+   .hotel .ng-select.ng-select-single .ng-select-container{
+        height: 40px !important;
+    }
+    .hotel .ng-select.ng-select-single .ng-select-container .ng-value-container, .ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value{margin: auto}
+     .caret{
+         i{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: $gray_one;
+         }
+     }
     
 }
 

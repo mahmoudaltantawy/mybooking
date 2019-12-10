@@ -31,6 +31,9 @@ import { SeatsComponent } from './seats/seats.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { DummycontentComponent } from './hotels/dummycontent/dummycontent.component';
+import { HotelHomeComponent } from './hotels/hotel-home/hotel-home.component';
+import { HotelSearchComponent } from './hotels/hotel-search/hotel-search.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,13 @@ import { TicketComponent } from './ticket/ticket.component';
     SeatsComponent,
     PaymentComponent,
     ConfirmationComponent,
-    TicketComponent
+    TicketComponent,
+    
+    DummycontentComponent,
+    
+    HotelHomeComponent,
+    
+    HotelSearchComponent
   ],
   imports: [
     BrowserModule,

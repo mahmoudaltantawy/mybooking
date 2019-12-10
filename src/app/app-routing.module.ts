@@ -7,6 +7,9 @@ import { RegisterComponent } from './register/register.component';
 import{RetrivebookComponent} from './retrivebook/retrivebook.component';
 import{FlightdetailsComponent} from './flightdetails/flightdetails.component';
 import { TravellersDataComponent } from './travellers-data/travellers-data.component';
+import{HotelHomeComponent} from './hotels/hotel-home/hotel-home.component';
+//hotels
+
 const routes: Routes = [
   {path:'',component:ContentComponent},
   {path:'results',component:ResultComponent},
@@ -14,7 +17,9 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'retrive',component:RetrivebookComponent},
   {path:'flight-details',component:FlightdetailsComponent},
-  {path:'traveller-data',component:TravellersDataComponent}
+  {path:'traveller-data',component:TravellersDataComponent},
+  {path:'hotel-home',component:HotelHomeComponent}
+
   
 ];
 
