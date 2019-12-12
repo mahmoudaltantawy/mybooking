@@ -1,0 +1,87 @@
+$orange:#FDC32C;
+$green:#8DC043;
+$blue:#1874B9;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.consolidator{
+    background-color: #FFF;
+    padding-bottom: 2rem;
+    .row{
+        display: flex;
+        .slider{
+            flex:60%
+        }
+        .form_login{
+            flex:40%
+        }
+    }
+    .login-consolid{
+        width: 80%;
+        margin: auto;
+        margin-top: 30%;
+        .login_icon{
+            display: block;
+            border: 2px solid $gray_three;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding-top: 20px;
+            margin: auto;
+            margin-bottom: 2rem;
+            img{
+                width:100px;
+                height: 100px;
+            }
+        }
+        .form-group{
+            position: relative;
+            .form-control{
+                height: 3.5rem;
+                margin-bottom: 10px;
+            }
+            img{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                width: 25px;
+                height: 25px;
+            }
+
+        }
+        .login-button{
+            text-align: center;
+            .btn{
+                width: 50%;
+                border: 1px solid $blue;
+                height: 50px;
+                padding-top: 13px;
+                color: $blue;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+    .slide{
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        color: #FFF;
+        left:23%;
+        text-align: center;
+        display: block;
+    }
+    .welcome{
+        position: absolute;
+        top: 20%;
+        width: 50%;
+        color: #FFF;
+        left:23%;
+        display: block; 
+        p{
+            text-align: center
+        }
+
+    }
+}

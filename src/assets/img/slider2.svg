@@ -1,0 +1,80 @@
+<svg id="Group_2370" data-name="Group 2370" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="968.573" height="936.328" viewBox="0 0 968.573 936.328">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #0062ac;
+      }
+
+      .cls-3, .cls-6 {
+        opacity: 0.4;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        opacity: 0.5;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-5, .cls-8 {
+        opacity: 0.3;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-9 {
+        fill: url(#radial-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#99d1db"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="192.033" cy="-77.349" r="415.547" gradientTransform="translate(25.856 -39.575) scale(0.807 0.79)" xlink:href="#linear-gradient"/>
+    <radialGradient id="radial-gradient-2" cx="-444.609" cy="-4125.094" r="792.966" gradientTransform="translate(-334.89 -2967.428) scale(0.341 0.334)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-2" x1="0.421" y1="0.69" x2="0.713" y2="0.063" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_498" data-name="Rectangle 498" class="cls-1" width="718.387" height="361.287"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-3" cx="319.582" cy="319.581" r="319.581" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.201" stop-color="#fff" stop-opacity="0.761"/>
+      <stop offset="0.491" stop-color="#fff" stop-opacity="0.439"/>
+      <stop offset="0.729" stop-color="#fff" stop-opacity="0.2"/>
+      <stop offset="0.903" stop-color="#fff" stop-opacity="0.055"/>
+      <stop offset="0.995" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path id="Path_2478" data-name="Path 2478" class="cls-2" d="M.917,936.328H695.242c255.4,0,282.654-103.706,270.268-200.324L768.79,0H.917Z" transform="translate(0.642)"/>
+  <path id="Path_2479" data-name="Path 2479" class="cls-3" d="M.917,0V188.286c51.275-24.335,235.288-35.933,354.166-44.132C490.2,134.836,530.382,56.873,541.556,0Z" transform="translate(0.514)"/>
+  <g id="Group_1246" data-name="Group 1246" transform="translate(90.582 173.918)">
+    <path id="Path_2493" data-name="Path 2493" class="cls-4" d="M124.218,217.972c31.851-37.8,111.2-115.026,334.712-105.76,242.844,10.069,296.513,126.9,302.746,139.87a181.153,181.153,0,0,1,18.157,76.306c.794,51.393,2.015,96.059,8.547,148.792,23.9,192.971-210.693,222.019-365.029,224.855-274.138,5.033-317.76-87.2-333.952-123.912C64.087,520.737,54.963,455.609,58.941,393.468,62.875,332.09,83.594,266.185,124.218,217.972Z" transform="translate(-58.045 -111.447)"/>
+    <path id="Path_2494" data-name="Path 2494" class="cls-5" d="M387.491,333.435c-134.078-8.04-241.907,17.9-323.545,52.171a358.329,358.329,0,0,0,22.146,68.907c16.192,36.707,59.814,128.945,333.952,123.912,150.307-2.761,376.691-30.412,366.34-210.095C664.9,398.65,686.784,351.381,387.491,333.435Z" transform="translate(-54.738 12.163)"/>
+    <path id="Path_2495" data-name="Path 2495" class="cls-6" d="M627.874,252.035c-6.233-12.973-59.9-129.8-302.746-139.87q-11.072-.459-21.67-.634C291.32,145.59,290.166,191.465,347.8,218.717c99.372,46.983,178.03-2.141,210.742,93.967,13.207,38.8,48.592,55.864,88.283,54.65-.354-12.717-.593-25.626-.8-38.993A181.153,181.153,0,0,0,627.874,252.035Z" transform="translate(75.757 -111.399)"/>
+  </g>
+  <g id="Group_1300" data-name="Group 1300" transform="translate(0 575.041)">
+    <g id="Group_1297" data-name="Group 1297" class="cls-7">
+      <g id="Group_1296" data-name="Group 1296" class="cls-8" transform="translate(-7.439 46.414)">
+        <g id="Group_1295" data-name="Group 1295">
+          <circle id="Ellipse_186" data-name="Ellipse 186" class="cls-9" cx="319.581" cy="319.581" r="319.581"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

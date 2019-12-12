@@ -34,6 +34,11 @@ import { TicketComponent } from './ticket/ticket.component';
 import { DummycontentComponent } from './hotels/dummycontent/dummycontent.component';
 import { HotelHomeComponent } from './hotels/hotel-home/hotel-home.component';
 import { HotelSearchComponent } from './hotels/hotel-search/hotel-search.component';
+import { ConsolidatorComponent } from './consolidator/consolidator.component';
+import { CarouselModule } from 'ngx-bootstrap';
+import { HotelResultComponent } from './hotels/hotel-result/hotel-result.component';
+import { HotelFilterComponent } from './hotels/hotel-filter/hotel-filter.component';
+import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serach/hotel-form-serach.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,15 @@ import { HotelSearchComponent } from './hotels/hotel-search/hotel-search.compone
     
     HotelHomeComponent,
     
-    HotelSearchComponent
+    HotelSearchComponent,
+    
+    ConsolidatorComponent,
+    
+    HotelResultComponent,
+    
+    HotelFilterComponent,
+    
+    HotelFormSerachComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +90,8 @@ import { HotelSearchComponent } from './hotels/hotel-search/hotel-search.compone
     FormsModule,
     ReactiveFormsModule,
     BsDatepickerModule.forRoot(),
-    PanelModule
+    PanelModule,
+    CarouselModule.forRoot()
    
     
   ],

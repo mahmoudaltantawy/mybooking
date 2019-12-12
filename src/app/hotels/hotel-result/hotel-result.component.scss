@@ -1,0 +1,212 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+
+.transform{transform: rotate(180deg)}
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hotel_result{
+    .overlay{
+        background: rgba(255,255,255,0.8);
+        .bookmark_info{
+            display: flex;
+            color: $blue;
+            span{
+                flex: 1;
+            }
+            span:last-child{
+                text-align:end;
+                padding-inline-end: 9%;
+            }
+                
+            
+        }
+        .booked_num{
+            color: $blue;
+            font-size: 1.2rem;
+        }
+        .panel_content,.hotels_{
+            .hotel_info{
+                background: #FFF;
+                margin-bottom: 20px;
+                border: 30px solid transparent;
+                -webkit-border-image: url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+                -o-border-image: url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch; 
+                border-image:url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+                color: $gray_one;
+                margin-top: 100px;
+                .share{
+                    position: absolute;
+                    left: 2rem;
+                    color: $blue;
+                    top: 8rem;
+                }
+                .bookmarked{
+                    position: absolute;
+                    right: 2rem;
+                    color: $blue;
+                    top: 8rem;
+                }
+    
+                .img_head{
+                    
+                        background: url('../../../assets/img/pic\ 5.jpg'); 
+                        @include  background-prop;
+                        background-size: cover;
+                        width: 80%;
+                        height: 150px;
+                        width: 150px;
+                        display: block;
+                        margin: auto;
+                        border-radius: 50%;
+                        margin-top: -100px;
+                        margin-bottom: 30px;
+                
+                }
+                h6{
+                    color: $blue;
+                    font-weight: bold;
+                }
+                .stars{
+                    color: $orange;
+                    margin-bottom: 0.5rem;
+                    i{
+                        margin-inline-start: 5px;
+                    }
+                }
+                .location{
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+    
+                    }
+                    
+                }
+                div.review{
+                    display: flex;
+                    margin-top: 1rem;
+                    margin-bottom:1rem;
+                    p{
+                        flex: 50%;
+                    }
+                    p.rate{
+    
+                        span{
+                            display: inline-block;
+                            background: $blue;
+                            padding: 5px;
+                            border-radius: 5px;
+                            color: #FFF;
+                            margin-inline-end: 5px;
+                        }
+                    }
+                }
+                div.select{
+                    display: flex;
+                    div{
+                        flex: 1;
+                    }
+                    div.button{
+                        text-align: center;
+                        .btn{
+                            background: url("../../../assets/img/button.svg");
+                            @include background-prop();
+                            height: 40px;
+                            color: #FFF;
+                            border: none;
+                            font-weight: bold;
+                            width: 100%;
+                            background-size: contain;
+                            display: block
+                        }
+                    }
+                    div.price{
+                        span{
+                            display: block;
+                        }
+                        span:first-child{
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .hotel_content{
+            .display{
+                border: 40px solid transparent;
+            
+                -webkit-border-image: url('../../../assets/img/frame\ flights.svg') 30 stretch;
+                -o-border-image: url('../../../assets/img/frame\ flights.svg') 30 stretch; 
+                border-image:url('../../../assets/img/frame\ flights.svg') 30 stretch;
+                color: $blue;
+                margin-bottom: 30px;
+                span{
+                    display: block;
+                    text-align: center;
+                }
+            }
+            .sort_by{
+                display: flex;
+                span{
+                    padding-top: 9%;
+                    font-size: 1.6rem;
+                    color: $blue;
+                    @media only screen and (max-width : 1200px) {font-size: 1.2rem}
+                }
+                ul{
+                   display: flex;
+                    li{
+                        width: 20%;
+                        height: 190px;
+                        border: 35px solid transparent;
+                        background: url('../../../assets/img/Group\ 2368.svg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        color: #1874B9;
+                        margin-bottom: 30px;
+                        margin-right: 4px;
+                        display: inline-block;
+                        text-align: center;
+                        padding-top: 6%;
+                        font-size: 1.2rem;
+                        position: relative;
+                        @media only screen and (max-width : 1200px){
+                            font-size: 0.9rem;
+                            height: 170px;
+                        }
+                        @media only screen and (max-width : 1024px){
+                            width: 19%;
+                            height: 160px;
+                            margin-right: 3px;
+                        }
+                    }
+                    li:not(:last-child)::after{
+                        content: "";
+                        position: absolute;
+                        right: -73%;
+                        top: 40%;
+                        background-image: url('../../../assets/img/Group\ 2369h.svg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 22px;
+                        @media only screen and (max-width : 1200px){display: none}
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

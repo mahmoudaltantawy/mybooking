@@ -8,6 +8,9 @@ import{RetrivebookComponent} from './retrivebook/retrivebook.component';
 import{FlightdetailsComponent} from './flightdetails/flightdetails.component';
 import { TravellersDataComponent } from './travellers-data/travellers-data.component';
 import{HotelHomeComponent} from './hotels/hotel-home/hotel-home.component';
+import { ConsolidatorComponent } from './consolidator/consolidator.component';
+import { HotelResultComponent } from './hotels/hotel-result/hotel-result.component';
+import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serach/hotel-form-serach.component';
 //hotels
 
 const routes: Routes = [
@@ -18,7 +21,10 @@ const routes: Routes = [
   {path:'retrive',component:RetrivebookComponent},
   {path:'flight-details',component:FlightdetailsComponent},
   {path:'traveller-data',component:TravellersDataComponent},
-  {path:'hotel-home',component:HotelHomeComponent}
+  {path:'hotel-home',component:HotelHomeComponent},
+  {path:'coonsolidator',component:ConsolidatorComponent},
+  {path:'hotel-result',component:HotelResultComponent},
+  
 
   
 ];
