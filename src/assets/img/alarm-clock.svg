@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.799" height="28.803" viewBox="0 0 28.799 28.803">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <g id="alarm-clock" transform="translate(0 0)">
+    <path id="Path_4070" data-name="Path 4070" class="cls-1" d="M41.206,3.647V1.8h2.7V0h-7.2V1.8h2.7l0,1.846a12.568,12.568,0,0,0-9.077,20.222L29.506,28.8h2.7l1.329-1.992a12.51,12.51,0,0,0,13.545,0L48.406,28.8h2.7l-.823-4.935a12.568,12.568,0,0,0-9.08-20.222ZM40.307,27a10.8,10.8,0,1,1,10.8-10.8A10.814,10.814,0,0,1,40.307,27Z" transform="translate(-25.906 -0.001)"/>
+    <path id="Path_4071" data-name="Path 4071" class="cls-1" d="M209.594,138.53h-1.8V145.2l4.313,4.313,1.273-1.273-3.786-3.786Z" transform="translate(-194.293 -129.529)"/>
+    <path id="Path_4072" data-name="Path 4072" class="cls-1" d="M0,0H1.8V9.656H0Z" transform="translate(20.699 1.273) rotate(-45)"/>
+    <path id="Path_4073" data-name="Path 4073" class="cls-1" d="M0,0H9.656V1.8H0Z" transform="translate(0 6.827) rotate(-45)"/>
+  </g>
+</svg>

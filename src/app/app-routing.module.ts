@@ -11,6 +11,8 @@ import{HotelHomeComponent} from './hotels/hotel-home/hotel-home.component';
 import { ConsolidatorComponent } from './consolidator/consolidator.component';
 import { HotelResultComponent } from './hotels/hotel-result/hotel-result.component';
 import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serach/hotel-form-serach.component';
+import { HotelDetailsComponent } from './hotels/hotel-details/hotel-details.component';
+import { HotelTravellersDataComponent } from './hotels/hotel-travellers-data/hotel-travellers-data.component';
 //hotels
 
 const routes: Routes = [
@@ -24,6 +26,8 @@ const routes: Routes = [
   {path:'hotel-home',component:HotelHomeComponent},
   {path:'coonsolidator',component:ConsolidatorComponent},
   {path:'hotel-result',component:HotelResultComponent},
+  {path:'hotel-details',component:HotelDetailsComponent},
+  {path:'hotel-travellers-data',component:HotelTravellersDataComponent}
   
 
   

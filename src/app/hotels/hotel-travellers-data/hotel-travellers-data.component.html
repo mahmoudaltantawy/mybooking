@@ -1,0 +1,711 @@
+<section class="traveller-data">
+        <div class="container">
+            <section class="steps">
+                <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="false" styleClass="steps-custom"></p-steps>
+    
+            </section>
+            <div class="row data_step" *ngIf="activeIndex == 1">
+                <div class="col-md-4 col-12">
+                    <div class="travel-details">
+                        <h4>
+    
+                        </h4>
+    
+                        <div class="total_price row">
+                            <p class="col-6">Total Price</p>
+                            <p class="col-6">EGP 1640</p>
+                        </div>
+                        <div class="break_down row">
+                            <p class="col-6">Fare Break Down</p>
+                            <div class="col-6">
+                                <p class="text-center" (click)="toggle_caret()" id="caret"> <i class="fa fa-caret-down"></i></p>
+                                <ul class="list-unstyled" *ngIf="showCaret">
+                                    <li>Adult x3 = EGP 2631</li>
+                                    <li>child x3 = EGP 2631</li>
+                                    <li>Infant x3 = EGP 2631</li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div class="brand row">
+                            <p class="col-6">Brand</p>
+                            <p class="col-6">Standard Economy <i class="fa  fa-question-circle-o" (click)="openModal(brand)"></i></p>
+                        </div>
+                        <div class="brand row">
+                            <p class="col-6">
+                                <img src="../../assets/img/travel.svg" id="travel" />
+                            </p>
+                            <p class="col-6">30 Kilograms Hand Luggage</p>
+                        </div>
+                        <button (click)="openModal(important_msg)">Select</button>
+    
+    
+                    </div>
+    
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="travel-details">
+                        <h4>
+    
+                        </h4>
+    
+                        <div class="total_price row">
+                            <p class="col-6">Total Price</p>
+                            <p class="col-6">EGP 1640</p>
+                        </div>
+                        <div class="break_down row">
+                            <p class="col-6">Fare Break Down</p>
+                            <div class="col-6">
+                                <p class="text-center" (click)="toggle_caret()" id="caret"> <i class="fa fa-caret-down"></i></p>
+                                <ul class="list-unstyled" *ngIf="showCaret">
+                                    <li>Adult x3 = EGP 2631</li>
+                                    <li>child x3 = EGP 2631</li>
+                                    <li>Infant x3 = EGP 2631</li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div class="brand row">
+                            <p class="col-6">Brand</p>
+                            <p class="col-6">Standard Economy <i class="fa  fa-question-circle-o" (click)="openModal(brand)"></i></p>
+                        </div>
+                        <div class="brand row">
+                            <p class="col-6">
+                                <img src="../../assets/img/travel.svg" id="travel" />
+                            </p>
+                            <p class="col-6">30 Kilograms Hand Luggage</p>
+                        </div>
+                        <button>Select</button>
+    
+    
+                    </div>
+    
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="summary">
+                        <h4 class="summary_head rounded-circle">Flight Summary</h4>
+                        <div class="from_to">
+                            <p>
+                                <img src="../../assets/img/air-transport.svg" />
+                                <span>Cairo</span> - <span>Dubai</span>
+                            </p>
+                            <p>
+                                <img src="../../assets/img/calendar.svg" />
+                                Sat,12 Oct 2019,08:15
+                            </p>
+                        </div>
+                        <div class="tickets">
+                            <p>6 Tickets:on Way</p>
+                            <div class="tickets_details">
+    
+                                <ul class="list-unstyled">
+                                    <li>
+    
+                                        <p-panel [toggleable]="true" [expandIcon]="'pi pi-caret-up'" [collapseIcon]="'pi pi-caret-down'">
+                                            <p-header>
+                                                <div class="panel_head" style="display:flex">
+                                                    <div> Travellers 1 Adult </div>
+                                                    <div>EGP 3339.00</div>
+                                                </div>
+    
+                                            </p-header>
+                                            <div class="panel_content">
+                                                <div><span>Fare</span> <span>297.00 EGP</span></div>
+                                                <div><span>Taxes and Fees</span> <span>297.00 EGP</span></div>
+                                            </div>
+    
+                                        </p-panel>
+    
+    
+                                    </li>
+                                    <li>
+    
+                                        <p-panel [toggleable]="true" [expandIcon]="'pi pi-caret-up'" [collapseIcon]="'pi pi-caret-down'">
+                                            <p-header>
+                                                <div class="panel_head" style="display:flex">
+                                                    <div> Travellers 1 Adult </div>
+                                                    <div>EGP 3339.00</div>
+                                                </div>
+    
+                                            </p-header>
+                                            <div class="panel_content">
+                                                <div><span>Fare</span> <span>297.00 EGP</span></div>
+                                                <div><span>Taxes and Fees</span> <span>297.00 EGP</span></div>
+                                            </div>
+    
+                                        </p-panel>
+    
+    
+                                    </li>
+                                    <li>
+    
+                                        <p-panel [toggleable]="true" [expandIcon]="'pi pi-caret-up'" [collapseIcon]="'pi pi-caret-down'">
+                                            <p-header>
+                                                <div class="panel_head" style="display:flex">
+                                                    <div> Travellers 1 Adult </div>
+                                                    <div>EGP 3339.00</div>
+                                                </div>
+    
+                                            </p-header>
+                                            <div class="panel_content">
+                                                <div><span>Fare</span> <span>297.00 EGP</span></div>
+                                                <div><span>Taxes and Fees</span> <span>297.00 EGP</span></div>
+                                            </div>
+    
+                                        </p-panel>
+    
+    
+                                    </li>
+                                    <li>
+    
+                                        <p-panel [toggleable]="true" [expandIcon]="'pi pi-caret-up'" [collapseIcon]="'pi pi-caret-down'">
+                                            <p-header>
+                                                <div class="panel_head" style="display:flex">
+                                                    <div> Travellers 1 Adult </div>
+                                                    <div>EGP 3339.00</div>
+                                                </div>
+    
+                                            </p-header>
+                                            <div class="panel_content">
+                                                <div><span>Fare</span> <span>297.00 EGP</span></div>
+                                                <div><span>Taxes and Fees</span> <span>297.00 EGP</span></div>
+                                            </div>
+    
+                                        </p-panel>
+    
+    
+                                    </li>
+                                    <li>
+    
+                                        <p-panel [toggleable]="true" [expandIcon]="'pi pi-caret-up'" [collapseIcon]="'pi pi-caret-down'">
+                                            <p-header>
+                                                <div class="panel_head" style="display:flex">
+                                                    <div> Travellers 1 Adult </div>
+                                                    <div>EGP 3339.00</div>
+                                                </div>
+    
+                                            </p-header>
+                                            <div class="panel_content">
+                                                <div><span>Fare</span> <span>297.00 EGP</span></div>
+                                                <div><span>Taxes and Fees</span> <span>297.00 EGP</span></div>
+                                            </div>
+    
+                                        </p-panel>
+    
+    
+                                    </li>
+    
+    
+                                </ul>
+    
+                            </div>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span>EGP 31339.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="traveller_form">
+                        <form [formGroup]="traveller_data" class="form-row" novalidate>
+                            <!-- adult -->
+                            <div class="travel-details">
+                                <h5>Adult1</h5>
+                                <div class="form-row">
+    
+                                    <div class="form-group col-md-2">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="title">
+                                            <ng-option [value]="true">MR</ng-option>
+                                            <ng-option [value]="false">MRS</ng-option>
+                                        </ng-select>
+    
+    
+                                    </div>
+                                    <div class="form-group col-md-10">
+                                        <div class="row">
+                                            <div class="form-group col-md-4">
+                                                <input class="form-control firstname" type="text" placeholder="First name"
+                                                    formControlName="firstname" />
+                                            </div>
+                                            <div class="form-group col-md-4 ">
+                                                <input class="form-control secondname" type="text" placeholder="Second name"
+                                                    formControlName="secondname" />
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input class="form-control" type="text" placeholder="Last name"
+                                                    formControlName="lastname" />
+                                            </div>
+                                        </div>
+                                    </div>
+    
+    
+    
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Birth Date"
+                                            formControlName="birthday" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="phone" placeholder="Phone">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="nationality" placeholder="Nationality">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="gender">
+                                            <ng-option [value]="true">Male</ng-option>
+                                            <ng-option [value]="false">Female</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Passport ID"
+                                            formControlName="Passport_id" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Expiration Date"
+                                            formControlName="expiration" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Email"
+                                            formControlName="email" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" placeholder="Add usual Flyer Number" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Add Meal Preference"
+                                            formControlName="add_meal">
+                                            <ng-option [value]="true">No Preference</ng-option>
+                                            <ng-option [value]="false">Hala Meal</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4 add_seat">
+                                        <button class="btn" (click)="openModal(seats)">Add Your Seats</button>
+                                    </div>
+                                </div>
+    
+    
+    
+    
+    
+                            </div>
+                            <!-- child -->
+                            <div class="travel-details">
+                                <h5>Child</h5>
+                                <div class="form-row">
+    
+                                    <div class="form-group col-md-3">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="title">
+                                            <ng-option [value]="true">MR</ng-option>
+                                            <ng-option [value]="false">MRS</ng-option>
+                                        </ng-select>
+    
+    
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="First name" formControlName="firstname" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="Second name" formControlName="secondname" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="Last name" formControlName="lastname" />
+                                    </div>
+    
+    
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Birth Date"
+                                            formControlName="birthday" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="phone" placeholder="Phone">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="nationality" placeholder="Nationality">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Passport ID"
+                                            formControlName="Passport_id" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="gender">
+                                            <ng-option [value]="true">Male</ng-option>
+                                            <ng-option [value]="false">Female</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+    
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" placeholder="Add usual Flyer Number" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Add Meal Preference"
+                                            formControlName="add_meal">
+                                            <ng-option [value]="true">No Preference</ng-option>
+                                            <ng-option [value]="false">Hala Meal</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4 add_seat">
+                                        <button class="btn">Add Your Seats</button>
+                                    </div>
+                                </div>
+    
+    
+    
+    
+    
+                            </div>
+                            <!-- infant -->
+                            <div class="travel-details">
+                                <h5>Infant</h5>
+    
+                                <div class="form-row">
+    
+                                    <div class="form-group col-md-3">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="title">
+                                            <ng-option [value]="true">MR</ng-option>
+                                            <ng-option [value]="false">MRS</ng-option>
+                                        </ng-select>
+    
+    
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="First name" formControlName="firstname" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="Second name" formControlName="secondname" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <input class="form-control" type="text" placeholder="Last name" formControlName="lastname" />
+                                    </div>
+    
+    
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Birth Date"
+                                            formControlName="birthday" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="phone" placeholder="Phone">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <ng-select appearance="outline" [searchable]="false" [clearable]="false"
+                                            formControlName="nationality" placeholder="Nationality">
+                                            <ng-option value="batman">
+                                                <img src="../../assets/img/airline/EK.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="spidey">
+                                                <img src="../../assets/img/airline/EY.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                            <ng-option value="thor">
+                                                <img src="../../assets/img/airline/KU.png" width="20px" height="20px" />
+                                                Airline
+                                            </ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" bsDatepicker placeholder="Passport ID"
+                                            formControlName="Passport_id" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Gender"
+                                            formControlName="gender">
+                                            <ng-option [value]="true">Male</ng-option>
+                                            <ng-option [value]="false">Female</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+    
+                                    <div class="form-group col-md-4">
+                                        <input class="form-control" type="text" placeholder="Add usual Flyer Number" />
+                                    </div>
+                                    <div class="form-group col-md-4">
+    
+                                        <ng-select appearance="outline" #agreeSelect [searchable]="false" placeholder="Add Meal Preference"
+                                            formControlName="add_meal">
+                                            <ng-option [value]="true">No Preference</ng-option>
+                                            <ng-option [value]="false">Hala Meal</ng-option>
+                                        </ng-select>
+    
+                                    </div>
+                                    <div class="form-group col-md-4 add_seat">
+                                        <button class="btn">Add Your Seats</button>
+                                    </div>
+                                </div>
+    
+    
+    
+    
+    
+                            </div>
+                        </form>
+                        <div class="continue">
+                            <button class="btn">Continue</button>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="payment_step" *ngIf="activeIndex == 2">
+                <app-hotel-payment></app-hotel-payment>
+            </div>
+            <div class="payment_step" *ngIf="activeIndex == 3">
+                <app-hotel-confirmation></app-hotel-confirmation>
+                
+                
+            </div>
+            
+           
+    
+        </div>
+    </section>
+    
+    <!-- start modals -->
+    <!-- important message -->
+    
+    
+    <ng-template #important_msg>
+        <section class="important_msg">
+            <span class="mount mount_left">
+                <img src="../../assets/img/mountain.svg"/>
+            </span>
+            <span class="mount mount_right">
+                <img src="../../assets/img/Group 1227.svg"/>
+            </span>
+            <div class="container-fluid">
+                <h4 class="title_circle">Important Message</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+    
+    
+                    <p>Yout Flight is in a different price</p>
+                    <p>If you want ti select another flight press<span>Back</span></p>
+                    <p>If You Want To Continue flight press <span>Close</span></p>
+    
+                 <div class="buttons">
+                     <a class="float-left">
+                         <img src="../../assets/img/surface1.svg"/>
+                     </a>
+                     <a class="float-right">Close</a>
+                 </div>
+                </div>
+            </div>
+    
+            
+    
+        </section>
+    
+    </ng-template>
+    
+    <!-- start brand details -->
+    
+    <ng-template #brand>
+          
+        <div class="modal-body">
+               <div class="brand_details">
+                   
+                        <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                       <div class="row">
+                           <div class="col-md-6 col-12">
+                               <ul class="list-unstyled travel_features">
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                                   <li>Cabin Bag Max 23 KG</li>
+                               </ul>
+                           </div>
+                           <div class="col-md-2 col-sm-4 col-12">
+                               <h3 class="title">
+                                   <span>Standard</span> <span>Economy</span></h3>
+                               <ul class="list-unstyled text-center">
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                   <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                      
+                                   
+                               </ul>
+                           </div>
+                           <div class="col-md-2 col-sm-4 col-12">
+                                <h3 class="title">
+                                  <span>Economy</span>
+                                  <span>Flex</span>    
+                                    
+                                </h3>
+                                <ul class="list-unstyled text-center">
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                           
+                                        
+                                    </ul>
+                           </div>
+                           <div class="col-md-2 col-sm-4 col-12">
+                                <h3 class="title">
+                                    <span>Business</span>
+                                    <span>Flex</span>
+                                     
+                                </h3>
+                                <ul class="list-unstyled text-center">
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-check-circle fa--2x"></i></span></li>
+                                        <li> <span> <i class="fa fa-times-circle fa--2x"></i></span></li>
+                                           
+                                        
+                                </ul>
+                           </div>
+                       </div>
+                   
+                   
+               </div>
+    
+        </div>
+    </ng-template>
+    
+    
+    <!-- start seats -->
+    
+    <ng-template #seats>
+        <div class="modal-body">
+                
+                <app-seats></app-seats>
+        </div>
+    </ng-template>
+    

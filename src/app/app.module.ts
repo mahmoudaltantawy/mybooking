@@ -39,6 +39,15 @@ import { CarouselModule } from 'ngx-bootstrap';
 import { HotelResultComponent } from './hotels/hotel-result/hotel-result.component';
 import { HotelFilterComponent } from './hotels/hotel-filter/hotel-filter.component';
 import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serach/hotel-form-serach.component';
+import { HotelDetailsComponent } from './hotels/hotel-details/hotel-details.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+import 'hammerjs';
+import { AgmCoreModule } from '@agm/core';
+ import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { HotelTravellersDataComponent } from './hotels/hotel-travellers-data/hotel-travellers-data.component';
+import { HotelPaymentComponent } from './hotels/hotel-payment/hotel-payment.component';
+import { HotelConfirmationComponent } from './hotels/hotel-confirmation/hotel-confirmation.component';
+
 
 @NgModule({
   declarations: [
@@ -73,7 +82,15 @@ import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serac
     
     HotelFilterComponent,
     
-    HotelFormSerachComponent
+    HotelFormSerachComponent,
+    
+    HotelDetailsComponent,
+    
+    HotelTravellersDataComponent,
+    
+    HotelPaymentComponent,
+    
+    HotelConfirmationComponent
   ],
   imports: [
     BrowserModule,
@@ -91,7 +108,16 @@ import { HotelFormSerachComponent } from './hotels/hotel-search/hotel-form-serac
     ReactiveFormsModule,
     BsDatepickerModule.forRoot(),
     PanelModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    NgxGalleryModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBj73Uq3eXcvsuoXQ5U7ouYzfx6a1FedFY'
+      
+    }),
+     TooltipModule.forRoot()
+   
+
+    
    
     
   ],

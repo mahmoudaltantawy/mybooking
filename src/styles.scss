@@ -94,6 +94,16 @@ body {
     .filter_slice .mat-checkbox-frame{
         border-color: $green !important;
     }
+    .check{
+        .mat-checkbox-frame{
+            border-color: $blue !important;
+        }
+        .mat-checkbox{
+            display: inline-block;
+            width: 50%;
+        }
+    }
+    
     .modal-content{
         background: none;
         border:none;
@@ -311,6 +321,27 @@ body {
     .carousel-control-prev{
         left: 40%;
     }
+    .ngx-gallery-preview-img.ngx-gallery-active{
+        width: 80%;
+    }
+    .ngx-gallery-image-wrapper{
+        border: 1px solid $blue;
+        border-radius: 10px;
+    }
+    .ngx-gallery-thumbnail-size-cover .ngx-gallery-thumbnails .ngx-gallery-thumbnail{
+        border: 1px solid $blue;
+        border-radius: 10px;
+    }
+   .tooltip-inner {
+        background-color: #FFF;
+        color: $gray_one;
+        border: 1px solid #333;
+        min-width: 500px;
+      }
+      .tooltip.top .tooltip-arrow:before,
+      .tooltip.top .tooltip-arrow {
+        display: none
+      }
     
 }
 

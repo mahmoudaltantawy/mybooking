@@ -1,0 +1,913 @@
+<section class="hotel_details">
+    <div class="overlay">
+        <div class="container">
+            <div class="sort_by row">
+
+                <ul class="list-unstyled col-12">
+                    <li>
+                        Photos
+                    </li>
+                    <li>
+                        Overview
+                    </li>
+                    <li>
+                        Rooms
+                    </li>
+                    <li>
+                        Facilities
+                    </li>
+                    <li>
+                        Rules
+                    </li>
+                    <li>
+                        Reviews
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="map">
+                        <h3>
+                            <img src="../../../assets/img/map-01.svg" />
+                            Map</h3>
+                        <agm-map [latitude]="30.102250" [longitude]="31.385880" [zoom]="zoom">
+                            <agm-marker [latitude]="30.102250" [longitude]="31.385880"></agm-marker>
+                        </agm-map>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="hotel_photos">
+                        <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9">
+                    <h2 class="room_title">Section Room 1</h2>
+                    <div class="rates">
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                 repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                 repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                 repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <h2 class="room_title">Section Room 2</h2>
+                    <div class="rates">
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                     repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                     repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                        <div class="room">
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3>Deluxe Single</h3>
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                    <img src="../../../assets/img/login.svg" />
+                                </li>
+                                <li containerClass="my_tooltip" tooltip="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit culpa asperiores repellat! Eaque corrupti
+                                                                                     repellendus reiciendis voluptates necessitatibus facilis incidunt quod quam aliquid, quidem maiores ipsa similique eius. Enim."
+                                    [delay]="500" placement="bottom">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Room Info
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Bed & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Tariff & Breakfast
+                                </li>
+                                <li>
+                                    <img src="../../../assets/img/login.svg" /> Cancellation
+                                </li>
+                            </ul>
+                            <div class="per_night">
+                                per Nights<h3>1200 EGP</h3>
+                            </div>
+
+                            <div class="total">
+                                Total
+                                <h3>12500 EGP</h3>
+                                <p>
+                                    <img src="../../../assets/img/login.svg" />
+                                    <a>10%</a>
+                                </p>
+
+                            </div>
+                            <div class="add">
+                                <img src="../../../assets/img/plus.svg" />
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="selection">
+                        <h3>Your Selection</h3>
+                        <p>
+                            <i class="fa fa-check"></i>
+                            Your selection not Complete
+                        </p>
+                        <div class="check">
+                            <mat-checkbox>Rooms</mat-checkbox>
+                            <mat-checkbox>Adult</mat-checkbox>
+                            <mat-checkbox>Nights</mat-checkbox>
+                            <mat-checkbox>Children</mat-checkbox>
+
+                        </div>
+                        <div class="price">
+                            Total For 6 Nights
+                            <h4>31339.00 EGP</h4>
+                            All Taxes included
+                        </div>
+                        <div class="btn">
+                            <button routerLink="/hotel-travellers-data">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="selection">
+                        <h3>Your Selection</h3>
+                        <p>
+                            <i class="fa fa-check"></i>
+                            Your selection not Complete
+                        </p>
+                        <div class="check">
+                            <mat-checkbox>Rooms</mat-checkbox>
+                            <mat-checkbox>Adult</mat-checkbox>
+                            <mat-checkbox>Nights</mat-checkbox>
+                            <mat-checkbox>Children</mat-checkbox>
+
+                        </div>
+                        <div class="price">
+                            Total For 6 Nights
+                            <h4>31339.00 EGP</h4>
+                            All Taxes included
+                        </div>
+                        <div class="btn">
+                                <button routerLink="/hotel-travellers-data">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+</section>
+<section class="overview">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md col-12">
+                    <h3 class="title">
+                        <img src="../../../assets/img/general-01.svg" />
+                        General
+                    </h3>
+                    <div class="general">
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>Hotel Name</h4>
+                                MOVENPICK HOTEL JUMEIRAH BEACH
+                            </li>
+                            <li>
+                                <h4>Chain Name</h4>
+                                MOVENPICK Hotels and resorts
+                            </li>
+                            <li>
+                                <h4>Country Name</h4>
+                                UNITED ARAB EMIRATES , DUBAI
+                            </li>
+                            <li>
+                                <h4>Region Name</h4>
+                                GCC
+                            </li>
+                            <li>
+                                <h4>Address</h4>
+                                JUMEIRAH BEACH resisdence p.o.Box 255555.588444
+                            </li>
+                            <li>
+                                <h4>Leisure</h4>
+                                swimming pool outdoor
+                                sauna spa
+                            </li>
+
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>Transportation</h4>
+                                <p>
+                                    <img src="../../../assets/img/icon.svg" />
+                                    <img src="../../../assets/img/scooter.svg" />
+                                    <img src="../../../assets/img/sedan-car-model.svg" />
+
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Hotel Business</h4>
+                                Meeting Room
+                            </li>
+                            <li>
+                                <h4>rating</h4>
+                                <span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <h4>Zip Code</h4>
+                                252589
+                            </li>
+                            <li>
+                                <h4>Telephone</h4>
+                                0111114785974
+                            </li>
+                            <li>
+                                <h4>Floor & Room</h4>
+                                25 floor, 249 rooms
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md col-12">
+                    <div class="description">
+                        <h3 class="title"> <img src="../../../assets/img/describtion.svg" /> Describtion</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nisi ut, commodi rem omnis
+                            ratione voluptatum eos blanditiis, nesciunt maiores dolores! Eaque explicabo excepturi eos
+                            facilis corrupti incidunt dicta dolore!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem tenetur sed autem
+                            perferendis blanditiis dolore cupiditate, harum itaque at fugiat laboriosam a vel aut
+                            excepturi? Odit alias fugit error!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sit deleniti optio
+                            nostrum quis, culpa recusandae quas eos perferendis quibusdam cum, architecto numquam
+                            consequuntur quam corporis sed? Quod, nemo ipsa?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto magni illo quasi harum
+                            tempora dolorum aut nemo minima accusantium hic ad deserunt eveniet mollitia delectus totam
+                            suscipit, error sit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum a incidunt sit?
+                            Placeat dolor voluptatem necessitatibus voluptatibus maxime corporis molestias dolorum
+                            eligendi, perferendis harum veritatis porro aut, reiciendis odit distinctio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tenetur non nisi, saepe
+                            iusto ut nulla illo fuga illum dolore iste optio rerum in pariatur aperiam sint ab, soluta
+                            maiores.
+
+                        </p>
+                        <div class="btn">
+                            <button (click)="openModal(describtion)">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="facilities">
+    <div class="overlay">
+        <div class="container">
+            <h2 class="title">Facilities</h2>
+            <div class="parts_container">
+                <div class="parts">
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        WIFI
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        Baby Sitting Services
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        Front Desk
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        Smoking Area
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        GYM/Fitness Center
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        SPA/Health Club
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        Turkish Bath/Hummam
+                    </span>
+                    <span>
+                        <img src="../../../assets/img/wifi.svg" />
+                        ATM
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="part">
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Accessibility
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Wheelchair accessibile rooms
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Roll-in-shower
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Front Desk Services
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Front Desk
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Concierge
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Dry Cleaning Service
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    luggage Storage
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Pool & Beach
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="part">
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Accessibility
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Wheelchair accessibile rooms
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Roll-in-shower
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Front Desk Services
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Front Desk
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Concierge
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Dry Cleaning Service
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    luggage Storage
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Pool & Beach
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="part">
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Accessibility
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Wheelchair accessibile rooms
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Roll-in-shower
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Front Desk Services
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Front Desk
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Concierge
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Dry Cleaning Service
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    luggage Storage
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Pool & Beach
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="part">
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Accessibility
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Wheelchair accessibile rooms
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Roll-in-shower
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Front Desk Services
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Front Desk
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Concierge
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Dry Cleaning Service
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    luggage Storage
+                                </li>
+
+                            </ul>
+                            <h4>
+                                <img src="../../../assets/img/disabled.svg" />
+                                Pool & Beach
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+<section class="rules">
+    <div class="overlay">
+
+        <div class="container">
+            <h3 class="title">Hotel Rules</h3>
+            <div class="rules_container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="../../../assets/img/alarm-clock.svg" />
+                                Hotel Check-IN
+                            </li>
+                            <li>
+                                <img src="../../../assets/img/alarm-clock.svg" />
+                                Min Age
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <ul class="list-unstyled">
+                            <li>2.00 PM</li>
+                            <li>18</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="../../../assets/img/alarm-clock.svg" />
+                                Hotel Check-Out
+                            </li>
+                            <li>
+                                <img src="../../../assets/img/alarm-clock.svg" />
+                                payment Methods
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <ul class="list-unstyled">
+                            <li>12.00 PM</li>
+                            <li class="visa">
+                                <img src="../../../assets/img/Group 544.svg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="overlay">
+
+        <div class="container">
+            <h2 class="title">Reviews</h2>
+            <div class="review_container">
+
+                <div class="media position-relative">
+                    <img src="../../../assets/img/team2.jpg" class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Mahmoud Altantawy</h5>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                        <a class="stretched-link">10 Month Ago
+                            <span>
+                                4 <i class="fa fa-heart fa-lg"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="media position-relative">
+                    <img src="../../../assets/img/team2.jpg" class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Mahmoud Altantawy</h5>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                        <a class="stretched-link">10 Month Ago
+                            <span>
+                                4 <i class="fa fa-heart fa-lg"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="media position-relative">
+                    <img src="../../../assets/img/team2.jpg" class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Mahmoud Altantawy</h5>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                        <a class="stretched-link">10 Month Ago
+                            <span>
+                                4 <i class="fa fa-heart fa-lg"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<ng-template #describtion>
+        
+    <div class="container">
+        <div class="des_modal">
+            <h3>Describtion</h3>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores officia velit,
+                        vitae nesciunt voluptate ea totam qui eius voluptatibus dolorem accusantium consequuntur
+                        labore consequatur laborum, soluta cumque aperiam neque.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iure ut aperiam voluptate
+                        impedit atque labore
+                        iusto esse voluptatum quos itaque nihil necessitatibus tempore veniam placeat, illum quaerat?
+                        Ipsa, ducimus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas maxime inventore,
+                        dolor vitae ad illo consectetur
+                        quos adipisci molestiae facilis sit nihil incidunt ipsa omnis minus sapiente soluta quia!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores officia velit,
+                        vitae nesciunt voluptate ea totam qui eius voluptatibus dolorem accusantium consequuntur
+                        labore consequatur laborum, soluta cumque aperiam neque.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iure ut aperiam voluptate
+                        impedit atque labore
+                        iusto esse voluptatum quos itaque nihil necessitatibus tempore veniam placeat, illum quaerat?
+                        Ipsa, ducimus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas maxime inventore,
+                        dolor vitae ad illo consectetur
+                        quos adipisci molestiae facilis sit nihil incidunt ipsa omnis minus sapiente soluta quia!
+                    </p>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores officia velit,
+                            vitae nesciunt voluptate ea totam qui eius voluptatibus dolorem accusantium consequuntur
+                            labore consequatur laborum, soluta cumque aperiam neque.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iure ut aperiam voluptate
+                            impedit atque labore
+                            iusto esse voluptatum quos itaque nihil necessitatibus tempore veniam placeat, illum quaerat?
+                            Ipsa, ducimus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas maxime inventore,
+                            dolor vitae ad illo consectetur
+                            quos adipisci molestiae facilis sit nihil incidunt ipsa omnis minus sapiente soluta quia!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores officia velit,
+                        vitae nesciunt voluptate ea totam qui eius voluptatibus dolorem accusantium consequuntur
+                        labore consequatur laborum, soluta cumque aperiam neque.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam iure ut aperiam voluptate
+                        impedit atque labore
+                        iusto esse voluptatum quos itaque nihil necessitatibus tempore veniam placeat, illum quaerat?
+                        Ipsa, ducimus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas maxime inventore,
+                        dolor vitae ad illo consectetur
+                        quos adipisci molestiae facilis sit nihil incidunt ipsa omnis minus sapiente soluta quia!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ng-template>
