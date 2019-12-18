@@ -207,7 +207,7 @@ body {
         
     }
     .modal-dialog{max-width:none !important}
-    .payment{
+    .payment,.booking_info{
         .nav{
            width: 50%;
            margin:auto;
@@ -241,6 +241,18 @@ body {
         }
         
 
+    }
+    .booking_info{
+        .nav-item{
+            margin-bottom: 2rem !important;
+            a{
+                padding-top: 30% !important;
+                color: $gray_one !important;
+                background-image:url('../src/assets/img/sign1.svg') !important; 
+            }
+            a.active{color: $blue !important}
+        }
+        
     }
 
     // tabs For flight details

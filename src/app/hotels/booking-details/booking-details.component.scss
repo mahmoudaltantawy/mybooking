@@ -1,0 +1,116 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.booking_info{
+    
+    width: 80%;
+    margin: auto;
+    border: 20px solid transparent;
+    background: #FFF;
+   
+    -webkit-border-image: url('../../../assets/img/Group\ 2367.svg') 30 stretch;
+    -o-border-image: url('../../../assets/img/Group\ 2367.svg') 30 stretch; 
+    border-image:url('../../../assets/img/Group\ 2367.svg') 30 stretch;
+    margin-top: 5rem;
+    ul{
+        flex: 1;
+        li{
+            margin-bottom: 2rem;
+            color: $gray_one;
+        }
+    }
+    .key{
+        li{
+            color: $blue;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+    .booking_details{
+        display: flex;
+     
+    }
+    .hotel_details{
+        div{
+            display: flex;
+            ul{
+                flex: 1
+            }
+        }
+    }
+    
+}
+.room_info{
+    width: 70%;
+    margin: auto;
+    border: 20px solid transparent;
+    background: #FFF;
+    -webkit-border-image: url('../../../assets/img/Group\ 2367.svg') 30 stretch;
+    -o-border-image: url('../../../assets/img/Group\ 2367.svg') 30 stretch; 
+    border-image:url('../../../assets/img/Group\ 2367.svg') 30 stretch;
+    margin-top: 5rem;
+    
+        h3.title{
+            width: 150px;
+            height: 150px;
+            background: url('../../../assets/img/sign1.svg');
+            @include background-prop();
+            text-align: center;
+            margin-top: -10%;
+            padding-top: 7%;
+            font-size: 1.2rem;
+            color: $blue;
+            margin-inline-start: 3rem;
+        
+        }
+        p{
+            margin-top: -8%;
+            text-align: center;
+            color: $blue;
+            font-size: 1.2rem;
+            margin-bottom: 5%;
+            span{
+                color: $gray_one;
+                margin-inline-start: 1rem;
+                font-size: 1rem;
+            }
+        }
+    
+    .adult{
+       ul {
+           li{
+               color: $gray_one;
+               
+               span{
+                   color: $gray_three;
+                   margin-inline-start: 0.5rem;
+               }
+           }
+           li:first-child{
+                color: $blue;
+                font-size: 1.2rem;
+
+           }
+       }
+    }
+  a{
+      img{
+          width: 25px;
+          height: 25px;
+          margin-inline-end: 5px;
+      }
+      color: $blue;
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+        display: block;
+        margin-top: 2rem;
+  }
+}

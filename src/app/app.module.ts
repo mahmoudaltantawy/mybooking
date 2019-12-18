@@ -47,6 +47,7 @@ import { AgmCoreModule } from '@agm/core';
 import { HotelTravellersDataComponent } from './hotels/hotel-travellers-data/hotel-travellers-data.component';
 import { HotelPaymentComponent } from './hotels/hotel-payment/hotel-payment.component';
 import { HotelConfirmationComponent } from './hotels/hotel-confirmation/hotel-confirmation.component';
+import { BookingDetailsComponent } from './hotels/booking-details/booking-details.component';
 
 
 @NgModule({
@@ -90,7 +91,9 @@ import { HotelConfirmationComponent } from './hotels/hotel-confirmation/hotel-co
     
     HotelPaymentComponent,
     
-    HotelConfirmationComponent
+    HotelConfirmationComponent,
+    
+    BookingDetailsComponent
   ],
   imports: [
     BrowserModule,
