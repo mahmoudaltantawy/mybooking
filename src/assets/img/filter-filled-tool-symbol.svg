@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.988" height="24.175" viewBox="0 0 23.988 24.175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="filter-filled-tool-symbol" transform="translate(0.519 0.5)">
+    <path id="Path_4203" data-name="Path 4203" class="cls-1" d="M13.126,10.944a1.429,1.429,0,0,1,.376.967V22.443a.716.716,0,0,0,1.218.51l2.938-3.367c.393-.472.61-.705.61-1.172v-6.5a1.441,1.441,0,0,1,.376-.967L27.075,1.8A1.073,1.073,0,0,0,26.286,0H5.484A1.072,1.072,0,0,0,4.7,1.8Z" transform="translate(-4.41)"/>
+  </g>
+</svg>

@@ -27,7 +27,9 @@ const routes: Routes = [
   {path:'coonsolidator',component:ConsolidatorComponent},
   {path:'hotel-result',component:HotelResultComponent},
   {path:'hotel-details',component:HotelDetailsComponent},
-  {path:'hotel-travellers-data',component:HotelTravellersDataComponent}
+  {path:'hotel-travellers-data',component:HotelTravellersDataComponent},
+  { path: 'dashboard',
+      loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }
   
 
   

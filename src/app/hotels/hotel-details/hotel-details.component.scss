@@ -44,6 +44,7 @@ $gray_three:#A2A2A2;
                     padding-top: 4%;
                     font-size: 1.5rem;
                     position: relative;
+                    @media only screen and (max-width : 991px){font-size: 1.9rem;}
                     @media only screen and (max-width : 1200px){
                         font-size: 0.9rem;
                         height: 170px;
@@ -87,6 +88,12 @@ $gray_three:#A2A2A2;
             -o-border-image: url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch; 
             border-image:url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
             margin-bottom: 10%;
+            @media only screen and (max-width : 991px){
+                border: 10px solid transparent;
+                -webkit-border-image: url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+            -o-border-image: url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch; 
+            border-image:url('../../../assets/img/frame\ flights\ \(blue\).svg') 30 stretch;
+            }
             .room{
                 display: flex;
                 border-bottom: 1px solid $gray_three;
@@ -203,6 +210,7 @@ $gray_three:#A2A2A2;
    
 }
 .facilities{
+    .overlay{background: rgba(255,255,255,0.8)}
     .title{
         color: $blue;
         padding-top: 5rem;
@@ -217,13 +225,20 @@ $gray_three:#A2A2A2;
         color: $gray_one;
         .parts{
             display: flex;
+            
             margin-top: 1rem;
+            @media only screen and (max-width : 991px){
+                flex-flow: row wrap;
+                flex-wrap: wrap;
+                
+            }
             span{
                 margin-inline-start: 2%;
                 color: $blue;
                 img{
                     margin-inline-end: 2px;
                 }
+                @media only screen and (max-width : 991px){margin-bottom: 5px;}
             }
             span:first-child{
                 margin-inline-start: 0;
@@ -311,6 +326,7 @@ $gray_three:#A2A2A2;
     }
 }
 .rules{
+    .overlay{background: rgba(255,255,255,0.8)}
     .title{color: $blue}
     .rules_container{
         
@@ -344,6 +360,7 @@ $gray_three:#A2A2A2;
     }
 }
 .reviews{
+    .overlay{background: rgba(255,255,255,0.8)}
     .container{
         .title{color: $blue}
         .review_container{
@@ -387,7 +404,7 @@ $gray_three:#A2A2A2;
      
 
     }
-   
+    
 }
 
 .des_modal{

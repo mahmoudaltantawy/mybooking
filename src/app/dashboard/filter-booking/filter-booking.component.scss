@@ -1,0 +1,59 @@
+
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.filter_booking{
+    padding-top: 3rem;
+    position: relative;
+    .plane{
+        position: absolute;
+        top: 0%;
+        right: 25%;
+        height: 90%;
+    }
+    .search_book{
+       padding: 2rem;
+        h4{
+            color: $blue;
+            font-size: 1.3rem;
+        }
+        .choose_type{
+            padding-inline-start: 3rem;
+            li{
+                margin-top: 1rem;
+                color: $gray_one;
+            }
+        }
+        .search{
+            position: relative;
+            width:50%;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            .search_icon{
+                position: absolute;
+                left: 1rem;
+                top: 5px;
+                display: inline-block;
+                height: 70%;
+                margin-top: 5px;
+                border-inline-end: 1px solid $gray_two;
+                padding-inline-end: 10px;
+                i{
+                    margin-top: 7px;
+                    color: $blue;
+                }
+            }
+            .form-control{
+                height: 50px;
+                background: #FFF;
+                border-radius: 20px;
+                text-align: center;
+                border: 1px solid $gray_two;
+            }
+        }
+    }
+    
+}

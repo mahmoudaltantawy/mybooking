@@ -1,0 +1,155 @@
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary" (click)="toggle_menu()">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a routerLink="/dashboard">
+                    <span class="icon">
+                        <img src="../../../assets/img/home.svg" />
+                    </span>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard">
+                    <span class="icon">
+                        <img src="../../../assets/img/dashboard-2.svg" />
+                    </span>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a routerLink="/dashboard" (click)="isCollapsed1 = !isCollapsed1" aria-controls="collapseBasic"
+                [attr.aria-expanded]="!isCollapsed1">
+                    <span class="icon">
+                        <img src="../../../assets/img/login.svg" />
+                    </span>
+                    Profile
+                    <i class="fa fa-chevron-down" *ngIf="!isCollapsed1"></i>
+                    <i class="fa fa-chevron-up" *ngIf="isCollapsed1"></i>
+                </a>
+                <div id="collapseBasic" [collapse]="isCollapsed1" [isAnimated]="true">
+                        <div class="well well-lg card card-block card-header">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p-radioButton name="groupname" value="val1" label="Update profile" ></p-radioButton>
+    
+                                </li>
+                                <li>
+                                    <p-radioButton name="groupname" value="val2" label="update password"></p-radioButton>
+                                </li>
+                              
+    
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+            <li>
+
+                <a routerLink="/dashboard" (click)="isCollapsed = !isCollapsed" aria-controls="collapseBasic"
+                    [attr.aria-expanded]="!isCollapsed">
+                    <span class="icon">
+                        <img src="../../../assets/img/filter-filled-tool-symbol.svg" />
+                    </span>
+                    Fliter Booking 
+                    <i class="fa fa-chevron-down" *ngIf="!isCollapsed"></i>
+                    <i class="fa fa-chevron-up" *ngIf="isCollapsed"></i>
+                </a>
+                    <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+                            <div class="well well-lg card card-block card-header">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p-radioButton name="groupname" value="val1" label="Flights"></p-radioButton>
+        
+                                    </li>
+                                    <li>
+                                        <p-radioButton name="groupname" value="val2" label="Hotels"></p-radioButton>
+                                    </li>
+                                  
+        
+                                </ul>
+                            </div>
+                        </div>
+            </li>
+            <li>
+                <a routerLink="/dashboard" (click)="isCollapsed2 = !isCollapsed2" aria-controls="collapseBasic"
+                    [attr.aria-expanded]="!isCollapsed">
+                    <span class="icon">
+                        <img src="../../../assets/img/airplane.svg" />
+                    </span>
+                    Flights
+                    <i class="fa fa-chevron-down" *ngIf="!isCollapsed2"></i>
+                    <i class="fa fa-chevron-up" *ngIf="isCollapsed2"></i>
+                </a>
+                <div id="collapseBasic" [collapse]="isCollapsed2" [isAnimated]="true">
+                    <div class="well well-lg card card-block card-header">
+                        <ul class="list-unstyled">
+                            <li>
+                                <p-radioButton name="groupname" value="val1" label="Pending Flights"></p-radioButton>
+
+                            </li>
+                            <li>
+                                <p-radioButton name="groupname" value="val2" label="Pending Flights"></p-radioButton>
+                            </li>
+                            <li>
+                                <p-radioButton name="groupname" value="val3" label="Past Flights"></p-radioButton>
+                            </li>
+                            <li>
+                                <p-radioButton name="groupname" value="val3" label="Cancelled Flights"></p-radioButton>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a routerLink="/dashboard" (click)="isCollapsed3 = !isCollapsed3" aria-controls="collapseBasic"
+                    [attr.aria-expanded]="!isCollapsed3">
+                    <span class="icon">
+                        <img src="../../../assets/img/hotel-01.svg" />
+                    </span>
+                    Hotels
+                    <i class="fa fa-chevron-down" *ngIf="!isCollapsed3"></i>
+                    <i class="fa fa-chevron-up" *ngIf="isCollapsed3"></i>
+                </a>
+                <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+                    <div class="well well-lg card card-block card-header">
+                        <ul class="list-unstyled">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p-radioButton name="groupname" value="val1" label="Pending Hotels"></p-radioButton>
+
+                                </li>
+                                <li>
+                                    <p-radioButton name="groupname" value="val2" label="Pending Hotels"></p-radioButton>
+                                </li>
+                                <li>
+                                    <p-radioButton name="groupname" value="val3" label="Past Hotels"></p-radioButton>
+                                </li>
+                                <li>
+                                    <p-radioButton name="groupname" value="val3" label="Cancelled Hotels"></p-radioButton>
+                                </li>
+
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+       <app-profile></app-profile>
+       <app-filter-booking></app-filter-booking>
+    </div>
+</div>

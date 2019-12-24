@@ -354,7 +354,19 @@ body {
       .tooltip.top .tooltip-arrow {
         display: none
       }
-    
+     #menu{
+        .ui-panelmenu .ui-panelmenu-header > a .ui-panelmenu-icon{
+            float: right
+        }
+       
+        
+     } 
+     #sidebar {
+         .ui-radiobutton .ui-radiobutton-box{
+             border-color: #FFF;
+             background: none;
+         }
+     }
 }
 
 

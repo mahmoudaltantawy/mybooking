@@ -1,0 +1,145 @@
+$orange:#FDC32C;
+$green:#8DC043;
+$blue:#1874B9;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+@mixin  background-prop {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile{
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed $blue;
+    position: relative;
+    .plane{
+        position: absolute;
+        left: 5px;
+        bottom: 5px;;
+    }
+    .profile-info{
+        text-align: center;
+        .profile_img{
+            display: block;
+            text-align: center;
+            padding:3px;
+            border: 2px solid $blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+
+            img{
+              
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                border-radius:50%; 
+            }
+           
+        }
+        h4{
+            color: $gray_one;
+            margin-top: 1rem;
+            span{
+                color: $gray_three;
+                font-size: 1.1rem;
+                display: block
+            }
+        }
+    }
+    .interaction{
+        display: flex;
+        padding-top: 3rem;
+        .box{
+            flex: 1;
+            background: #f7f7f7;
+            color: $gray_one;
+            text-align: center;
+            margin-inline-end: 1rem;
+            border-top: 2px solid $blue;
+            span{
+               font-size: 1.3rem;
+               color: $blue;
+               display: block;
+               margin-bottom: 1rem; 
+               margin-top: 1rem;
+            }
+            h3{
+                font-size: 1.5rem;
+                color: $gray_one;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+.about{
+    padding-top: 3rem;
+    .mountain{
+        position: absolute;
+        right: 5%;
+        width: 100px;
+    }
+    h2.title{
+        background: $blue;
+        width: 200px;
+        text-align: right;
+        color: #FFF;
+        padding: 0.5rem 1rem;
+        border-radius: 0px 5px 5px 0px;
+    }
+    .skill{
+        margin-top: 1rem;
+        border-bottom: 2px dashed $blue;
+        padding-bottom: 1rem;
+        width: 70%;
+        h4{
+            color: $gray_one;
+            margin-top: 3rem;
+            img{
+                width: 35px;
+                height: 35px;
+                margin-inline-end: 5px;
+            }
+        }
+        p{
+            color: $gray_three;
+        }
+        
+    }
+    .no-border{border: none}
+}
+.update_password{
+    form{
+        width: 60%;
+        margin: auto;
+    }
+    margin: auto;
+    position: relative;
+    .plane{
+        position: absolute;
+        top: -20%;
+        right: 5%;
+        height: 300px;
+    }
+    label{
+        color: $gray_one;
+        font-size: 1.2rem;
+        
+    }
+    .form-control{
+        height: 55px;
+        color: $gray_three;
+    }
+    .mail{background: $gray_two;}
+    .buttons{
+        text-align: right;
+        .btn{
+            width: 150px;
+            background: #0e74b1;
+            margin-bottom: 2rem;
+        }
+    }
+}

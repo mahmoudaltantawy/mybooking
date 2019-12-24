@@ -48,6 +48,7 @@ import { HotelTravellersDataComponent } from './hotels/hotel-travellers-data/hot
 import { HotelPaymentComponent } from './hotels/hotel-payment/hotel-payment.component';
 import { HotelConfirmationComponent } from './hotels/hotel-confirmation/hotel-confirmation.component';
 import { BookingDetailsComponent } from './hotels/booking-details/booking-details.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 
 @NgModule({
@@ -117,7 +118,8 @@ import { BookingDetailsComponent } from './hotels/booking-details/booking-detail
       apiKey: 'AIzaSyBj73Uq3eXcvsuoXQ5U7ouYzfx6a1FedFY'
       
     }),
-     TooltipModule.forRoot()
+     TooltipModule.forRoot(),
+     CollapseModule.forRoot()
    
 
     
