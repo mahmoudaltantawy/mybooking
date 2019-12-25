@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-content.component.scss']
 })
 export class DashboardContentComponent implements OnInit {
-
+  choosen;
   constructor() { }
 
   ngOnInit() {
+    this.choosen = 'update_profile';
   }
   isCollapsed = false;
   isCollapsed1 = false;
@@ -20,6 +21,10 @@ export class DashboardContentComponent implements OnInit {
    
     let element = document.getElementById("sidebar");
     element.classList.toggle("active");
+}
+show_item($event){
+  this.choosen = $event;
+  
 }
 
 }

@@ -54,7 +54,7 @@ $gray_three:#A2A2A2;
         display: flex;
         padding-top: 3rem;
         .box{
-            flex: 1;
+            flex: 33%;
             background: #f7f7f7;
             color: $gray_one;
             text-align: center;
@@ -81,6 +81,7 @@ $gray_three:#A2A2A2;
         position: absolute;
         right: 5%;
         width: 100px;
+        @media only screen and (max-width : 768px){display: none}
     }
     h2.title{
         background: $blue;
@@ -95,6 +96,7 @@ $gray_three:#A2A2A2;
         border-bottom: 2px dashed $blue;
         padding-bottom: 1rem;
         width: 70%;
+        @media only screen and (max-width : 576px){width: 100%;}
         h4{
             color: $gray_one;
             margin-top: 3rem;
@@ -115,6 +117,9 @@ $gray_three:#A2A2A2;
     form{
         width: 60%;
         margin: auto;
+        @media only screen and (max-width : 1024px){
+            width: 80%;
+        }
     }
     margin: auto;
     position: relative;
@@ -123,6 +128,8 @@ $gray_three:#A2A2A2;
         top: -20%;
         right: 5%;
         height: 300px;
+        @media only screen and (max-width : 1024px){right: 0}
+        @media only screen and (max-width : 768px){display: none}
     }
     label{
         color: $gray_one;

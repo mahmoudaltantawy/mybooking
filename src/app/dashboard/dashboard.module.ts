@@ -12,8 +12,10 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import { ProfileComponent } from './profile/profile.component';
 import { FilterBookingComponent } from './filter-booking/filter-booking.component';
+import { FavouriteComponent } from './favourite/favourite.component';
+import { QueueListComponent } from './queue-list/queue-list.component';
 @NgModule({
-  declarations: [DashboardHeaderComponent, DashboardContentComponent, DashboardSidenavComponent, DashboardHomeComponent, ProfileComponent, FilterBookingComponent],
+  declarations: [DashboardHeaderComponent, DashboardContentComponent, DashboardSidenavComponent, DashboardHomeComponent, ProfileComponent, FilterBookingComponent, FavouriteComponent, QueueListComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

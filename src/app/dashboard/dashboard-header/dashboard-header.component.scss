@@ -58,3 +58,74 @@ ul.navbar-nav{
         
     }
 }
+
+// responsive
+#dashboard_header{
+    .collapse:not(.show){
+       @media only screen and (max-width : 991px){
+           display: flex;
+       }
+       @media only screen and (max-width : 400px){
+           flex-direction: column;
+       }
+
+        
+       .navbar-nav{
+           @media only screen and (max-width : 991px){
+               flex-direction: row;
+               flex: 70%;
+               margin: 0;
+                border: none;
+           }
+           @media only screen and (max-width : 600px){flex: none} 
+           @media only screen and (max-width : 480px){
+               margin: 0px;
+               padding: 0px;
+               border: none;
+               margin-left: 0px !important;
+           }
+           .search_icon{
+            @media only screen and (max-width : 480px){
+                border: none;
+               padding: 0px;
+               left: 2px;
+            }
+               
+           }
+           .buttons{
+            @media only screen and (max-width : 480px){
+                margin-inline-start: 0.5rem;
+            }
+           }
+       }
+       .user_info{
+        @media only screen and (max-width : 991px){
+           
+            flex: 30%;
+        }
+        @media only screen and (max-width : 600px){flex: none}
+           img{
+               @media only screen and (max-width : 991px){
+                   width: 50px;
+                   height: 50px;
+               }  
+               @media only screen and (max-width : 480px){
+                width: 40px;
+                height: 40px;
+            }
+               
+           }
+           span{
+            @media only screen and (max-width : 600px){display: none} 
+           }
+       }
+       .search{
+        @media only screen and (max-width : 991px){
+            width: 300px;
+        }
+           
+           @media only screen and (max-width : 480px){width: 250px;}
+       }
+      
+    }
+}

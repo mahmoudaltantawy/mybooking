@@ -1,0 +1,69 @@
+$orange:#FDC32C;
+$blue:#1874B9;
+$green:#8DC043;
+$gray_one:#707070;
+$gray_two:#E6E6E6;
+$gray_three:#A2A2A2;
+.queue{
+    .shadow{
+        padding: 4rem;
+        @media only screen and (max-width : 400px){padding: 2rem}
+    }
+    .title{
+        color: $blue;
+    }
+    .content{
+        color: $blue;
+        margin-top: 1rem;
+        width: 70%;
+        margin-inline-start: 2%;
+        @media only screen and (max-width : 768px){width: 100%}
+        label{
+            font-size: 1.5rem;
+        }
+        .form-control{
+            height: 50px;
+            margin-left: 0 !important;
+            color: $gray_one;
+           
+        }
+        .text-muted{
+            color: #F00 !important;
+            margin-top: 1rem;
+            display: block
+        }
+        .buttons{
+            display: block;
+            margin-top: 3rem;
+            a{
+                display: inline-block;
+                background: $blue;
+                color: #FFF;
+                text-align: center;
+                width: 100px;
+                height: 50px;
+                border-radius: 5px;
+                padding-top: 10px;
+                font-size: 1.2rem;
+                @media only screen and (max-width : 768px){
+                    display: block;
+                    width: 80%;
+                    
+                    margin: auto;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    padding-top: 10px;
+                }
+                @media only screen and (max-width : 400px){
+                    width: 100%;
+                    height: 40px;
+                    padding-top: 7px;
+                }
+            }
+            .exit{
+                float: right;
+                @media only screen and (max-width : 768px){float: none}
+            }
+        }
+    }
+}
