@@ -49,7 +49,7 @@ import { HotelPaymentComponent } from './hotels/hotel-payment/hotel-payment.comp
 import { HotelConfirmationComponent } from './hotels/hotel-confirmation/hotel-confirmation.component';
 import { BookingDetailsComponent } from './hotels/booking-details/booking-details.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-
+import{AngularFireModule} from '@angular/fire'
 
 @NgModule({
   declarations: [
@@ -119,7 +119,17 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
       
     }),
      TooltipModule.forRoot(),
-     CollapseModule.forRoot()
+     CollapseModule.forRoot(),
+     AngularFireModule.initializeApp({
+      apiKey: "AIzaSyCgCXzFYKooSn91cvIBcXAJeCZkePHi958",
+      authDomain: "booking-ca877.firebaseapp.com",
+      databaseURL: "https://booking-ca877.firebaseio.com",
+      projectId: "booking-ca877",
+      storageBucket: "booking-ca877.appspot.com",
+      messagingSenderId: "6862984374",
+      appId: "1:6862984374:web:127d203aa29d16a4948217",
+      measurementId: "G-BKY33GKCW2"
+    })
    
 
     
